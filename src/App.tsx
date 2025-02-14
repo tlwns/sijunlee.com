@@ -9,6 +9,7 @@ const App = () => {
       <Routes>
         <Route path='/' element={<RootLayout />}>
           <Route index element={<HomePage />} />
+          <Route path='*' element={<div>404 Not Found</div>} />
         </Route>
       </Routes>
     </BrowserRouter>
