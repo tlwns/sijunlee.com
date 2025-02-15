@@ -22,9 +22,10 @@ const Navbar = () => {
         align={'center'}
         gap={8}
         letterSpacing={'wide'}
+        // stop text from wrapping
+        whiteSpace={'nowrap'}
       >
       ***REMOVED***/* Homepage */}
-
       ***REMOVED***routes
           .filter((route) => route.index)
           .map((route) => (

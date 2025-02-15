@@ -4,9 +4,9 @@ import Navbar from '../components/ui/Navbar';
 
 const RootLayout = () => {
   return (
-    <Flex dir='column' height='100svh'>
+    <Flex dir='column' minHeight='100svh'>
       <Navbar />
-      <Flex flex={1}>
+      <Flex flex={1} mt={14}>
         <Outlet />
       </Flex>
     </Flex>
