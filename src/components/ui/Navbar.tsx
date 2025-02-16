@@ -29,7 +29,7 @@ const Navbar = () => {
       ***REMOVED***routes
           .filter((route) => route.index)
           .map((route) => (
-            <Box key={route.path} fontWeight={'medium'}>
+            <Box key={route.path}>
               <NavLink path={route.path} label={route.label} />
             </Box>
           ))}
@@ -38,7 +38,7 @@ const Navbar = () => {
       ***REMOVED***routes
           .filter((route) => !route.index)
           .map((route) => (
-            <Box key={route.path}>
+            <Box key={route.path} fontWeight={'light'}>
               <NavLink path={route.path} label={route.label} />
             </Box>
           ))}
