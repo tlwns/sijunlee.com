@@ -1,5 +1,4 @@
 import { Button, Flex, Text, Link, Image } from '@chakra-ui/react';
-import profile from '../../../public/images/profile.jpg';
 import ContactIcons from './ContactIcons';
 
 const Sidebar = () => {
@@ -20,7 +19,7 @@ const Sidebar = () => {
       >
       ***REMOVED***/* Headers */}
         <Image
-          src={profile}
+          src={'/images/profile.jpg'}
           alt={'Si Jun Lee'}
           boxSize={'32'}
           fit='cover'
