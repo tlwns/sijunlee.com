@@ -6,7 +6,7 @@ import TextLink from '../components/ui/TextLink';
 const HomePage = () => {
   return (
     <MainLayout>
-      <Flex flexDir='column' gap={10}>
+      <Flex flexDir='column' gap={10} w={'100%'}>
         <MainHeader
           title={'About this site'}
           description={

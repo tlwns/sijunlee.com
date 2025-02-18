@@ -1,10 +1,13 @@
 import { Flex } from '@chakra-ui/react';
 import MainLayout from '../layouts/MainLayout';
+import MainHeader from '../components/ui/MainHeader';
 
 const AboutPage = () => {
   return (
     <MainLayout>
-      <Flex>About Page</Flex>
+      <Flex flexDir='column' gap={10} w={'100%'}>
+        <MainHeader title={'About me'} description={'(In about 100 words)'} />
+      </Flex>
     </MainLayout>
   );
 };
