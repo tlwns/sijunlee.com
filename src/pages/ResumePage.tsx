@@ -6,7 +6,7 @@ const ResumePage = () => {
   return (
     <MainLayout>
       <Flex flexDir='column' gap={10} w={'100%'}>
-        <MainHeader title={'Resume'} description='' />
+        <MainHeader title={'Resume'} />
       </Flex>
     </MainLayout>
   );
