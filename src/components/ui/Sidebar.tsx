@@ -1,7 +1,11 @@
 import { Button, Flex, Text, Link, Image } from '@chakra-ui/react';
 import ContactIcons from './ContactIcons';
+import { NavLink as RouterNavLink, useLocation } from 'react-router';
 
 const Sidebar = () => {
+  const location = useLocation();
+  const isResumePage = location.pathname === '/resume';
+
   return (
     <Flex
       flexDir='column'
@@ -63,6 +67,7 @@ const Sidebar = () => {
           , Australia.
         </Text>
         <Button
+          asChild
           textTransform={'uppercase'}
           letterSpacing={'widest'}
           variant={'outline'}
@@ -72,7 +77,9 @@ const Sidebar = () => {
             borderColor: 'blue.700',
           }}
         >
-          Learn more
+          <RouterNavLink to={isResumePage ? '/about' : '/resume'}>
+          ***REMOVED***isResumePage ? 'About Me' : 'Learn More'}
+          </RouterNavLink>
         </Button>
       </Flex>
 
