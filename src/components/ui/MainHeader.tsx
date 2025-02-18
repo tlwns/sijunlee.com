@@ -2,10 +2,11 @@ import { Flex, Heading, Text } from '@chakra-ui/react';
 
 interface MainHeaderProps {
   title: string;
-  description: string;
+  description?: string;
+  children?: React.ReactNode;
 }
 
-const MainHeader = ({ title, description }: MainHeaderProps) => {
+const MainHeader = ({ title, description, children }: MainHeaderProps) => {
   return (
     <Flex
       flexDir='column'
@@ -23,9 +24,13 @@ const MainHeader = ({ title, description }: MainHeaderProps) => {
       ***REMOVED***title}
       </Heading>
 
-      <Text fontWeight={'light'} fontSize={'sm'} letterSpacing={'wider'}>
-      ***REMOVED***description}
-      </Text>
+    ***REMOVED***description && (
+        <Text fontWeight={'light'} fontSize={'sm'} letterSpacing={'wider'}>
+        ***REMOVED***description}
+        </Text>
+      )}
+
+    ***REMOVED***children}
     </Flex>
   );
 };
