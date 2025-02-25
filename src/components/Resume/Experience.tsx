@@ -28,17 +28,30 @@ const Experience = (data: ExperienceProps) => {
       </Heading>
     ***REMOVED***data.data.map((item, index) => (
         <Box key={index}>
-          <Flex justifyContent={'space-between'}>
-            <Text letterSpacing={'wider'} fontWeight={'semibold'}>
-              <TextLink to={item.link} underline={false}>
-              ***REMOVED***item.company}
-              </TextLink>
-            </Text>
-            <Text fontWeight={'light'} letterSpacing={'wider'}>
+          <Flex
+            justifyContent={'space-between'}
+            flexDir={{ base: 'column', md: 'row' }}
+          >
+            <Flex flexDir={'column'} gap={1}>
+              <Text letterSpacing={'wider'} fontWeight={'semibold'}>
+                <TextLink to={item.link} underline={false}>
+                ***REMOVED***item.company}
+                </TextLink>
+              </Text>
+              <Text letterSpacing={'wider'}>{item.position}</Text>
+            </Flex>
+            <Text
+              fontWeight={'light'}
+              letterSpacing={'wider'}
+              fontSize={{
+                base: 'sm',
+                md: 'md',
+              }}
+              mt={{ base: 6, md: 0 }}
+            >
             ***REMOVED***item.date}
             </Text>
           </Flex>
-          <Text letterSpacing={'wider'}>{item.position}</Text>
 
           <List.Root mt={6} fontWeight={'light'} ml={4} gap={2} fontSize={'sm'}>
           ***REMOVED***item.description.map((desc, index) => (
