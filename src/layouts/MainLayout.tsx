@@ -12,7 +12,6 @@ const MainLayout = ({ children }: MainLayoutProps) => {
       px={16}
       flexDir={{ base: 'column-reverse', lg: 'row' }}
       gap={20}
-      maxW={'90rem'}
     >
       <Sidebar />
       <Flex
