@@ -20,6 +20,7 @@ const MainHeader = ({ title, description, children }: MainHeaderProps) => {
         letterSpacing={'widest'}
         fontWeight={'extrabold'}
         as={'h2'}
+        fontSize={'2xl'}
       >
       ***REMOVED***title}
       </Heading>
