@@ -9,10 +9,10 @@ const MainLayout = ({ children }: MainLayoutProps) => {
   return (
     <Flex
       flex={1}
-      bgColor={'gray.100'}
       px={16}
       flexDir={{ base: 'column-reverse', lg: 'row' }}
       gap={20}
+      maxW={'90rem'}
     >
       <Sidebar />
       <Flex

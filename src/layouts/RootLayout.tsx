@@ -6,7 +6,7 @@ const RootLayout = () => {
   return (
     <Flex dir='column' minHeight='100svh'>
       <Navbar />
-      <Flex flex={1} mt={14}>
+      <Flex flex={1} mt={14} justify={'center'} bgColor={'gray.100'}>
         <Outlet />
       </Flex>
     </Flex>
