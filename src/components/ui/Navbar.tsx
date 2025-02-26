@@ -8,10 +8,10 @@ const Navbar = () => {
   return (
     <Flex
       w='100%'
-      bg={'gray.50'}
+      bg={'bg.subtle'}
       align={'center'}
       justify={'space-between'}
-      borderBottomColor={'gray.200'}
+      borderBottomColor={'border'}
       borderBottomWidth={1.1}
       height={14}
       position={'fixed'}

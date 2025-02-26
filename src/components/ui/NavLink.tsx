@@ -12,7 +12,7 @@ const NavLink = ({ path, label }: NavLinkProps) => {
       asChild
       _hover={{
         textDecoration: 'none',
-        color: 'blue.700',
+        color: 'blue.fg',
       }}
       outline={'none'}
       textTransform={'uppercase'}

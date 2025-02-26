@@ -14,12 +14,12 @@ const TextLink = ({ to, children, underline = true }: TextLinkProps) => {
     <Link
       color={'inherit'}
       href={to} // Use href for external links
-      textDecorationColor='gray.200'
+      textDecorationColor='border'
       textDecorationThickness={1.1}
     ***REMOVED***...(underline && { variant: 'underline' })}
       _hover={{
         textDecoration: 'none',
-        color: 'blue.700',
+        color: 'blue.fg',
       }}
       outline='none'
       target='_blank'
@@ -31,12 +31,12 @@ const TextLink = ({ to, children, underline = true }: TextLinkProps) => {
     <Link
       color={'inherit'}
       asChild
-      textDecorationColor='gray.200'
+      textDecorationColor='border'
       textDecorationThickness={1.1}
       variant='underline'
       _hover={{
         textDecoration: 'none',
-        color: 'blue.700',
+        color: 'blue.fg',
       }}
       outline='none'
     >

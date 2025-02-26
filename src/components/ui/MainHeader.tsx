@@ -12,7 +12,7 @@ const MainHeader = ({ title, description, children }: MainHeaderProps) => {
       flexDir='column'
       gap={6}
       borderBottomWidth={1.1}
-      borderColor={'gray.200'}
+      borderColor={'border'}
       pb={10}
     >
       <Heading

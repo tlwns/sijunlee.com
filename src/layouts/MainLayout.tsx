@@ -16,12 +16,12 @@ const MainLayout = ({ children }: MainLayoutProps) => {
       <Sidebar />
       <Flex
         aria-label='main'
-        bg={'gray.50'}
+        bg={'bg.subtle'}
         flex={1}
         my={14}
         height={'fit-content'}
         borderWidth={1.1}
-        borderColor={'gray.200'}
+        borderColor={'border'}
         py={12}
         px={10}
       >

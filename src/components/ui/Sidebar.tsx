@@ -1,4 +1,4 @@
-import { Button, Flex, Text, Link, Image } from '@chakra-ui/react';
+import { Button, Flex, Text, Image } from '@chakra-ui/react';
 import ContactIcons from './ContactIcons';
 import { NavLink as RouterNavLink, useLocation } from 'react-router';
 import TextLink from './TextLink';
@@ -67,8 +67,8 @@ const Sidebar = () => {
           variant={'outline'}
           borderRadius={0}
           _hover={{
-            color: 'blue.700',
-            borderColor: 'blue.700',
+            color: 'blue.fg',
+            borderColor: 'blue.fg',
           }}
         >
           <RouterNavLink to={isResumePage ? '/about' : '/resume'}>
@@ -83,25 +83,11 @@ const Sidebar = () => {
         <Text
           textTransform={'uppercase'}
           letterSpacing={'wider'}
-          color={'gray.500'}
           fontSize={'xs'}
+          color={'fg.muted'}
         >
           © SI JUN LEE&nbsp;&nbsp;
-          <Link
-            variant='underline'
-            href='https://sijun.lee.com'
-            target='_blank'
-            textDecorationColor={'gray.200'}
-            textDecorationThickness={1.1}
-            color='inherit'
-            _hover={{
-              color: 'blue.700',
-              textDecorationColor: 'blue.700',
-              textDecoration: 'none',
-            }}
-          >
-            SIJUN.LEE.COM
-          </Link>
+          <TextLink to={'https://sijun.lee.com'}>SIJUN.LEE.COM</TextLink>
         </Text>
       </Flex>
     </Flex>

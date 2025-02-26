@@ -7,10 +7,10 @@ const ContactIcons = () => {
     ***REMOVED***data.map((contact) => (
         <Link key={contact.label} href={contact.link} target='_blank'>
           <Icon
-            color={'gray.500'}
+            color={'fg.muted'}
             as={contact.icon}
             _hover={{
-              color: 'blue.700',
+              color: 'blue.fg',
             }}
           />
         </Link>

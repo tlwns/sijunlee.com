@@ -7,7 +7,7 @@ const RootLayout = () => {
     <Flex
       dir='column'
       minHeight='100svh'
-      bgColor={'gray.100'}
+      bgColor={'bg.muted'}
       justify={'center'}
     >
       <Navbar />
