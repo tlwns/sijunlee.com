@@ -1,17 +1,10 @@
 const routes = [
-***REMOVED***
-    index: true,
-    label: 'Si Jun Lee',
-    path: '/',
-***REMOVED***
+  { index: true, label: 'Si Jun Lee', path: '/' },
   // {
   //   label: 'About',
   //   path: '/about',
   // },
-***REMOVED***
-    label: 'Resume',
-    path: '/resume',
-***REMOVED***
+  { label: 'Resume', path: '/resume' },
   // {
   //   label: 'Projects',
   //   path: '/projects',
@@ -28,6 +21,6 @@ const routes = [
   //   label: 'Contact',
   //   path: '/contact',
   // },
-***REMOVED***
+];
 
 export default routes;

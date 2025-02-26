@@ -31,16 +31,16 @@ export const Tooltip = React.forwardRef<HTMLDivElement, TooltipProps>(
         <Portal disabled={!portalled} container={portalRef}>
           <ChakraTooltip.Positioner>
             <ChakraTooltip.Content ref={ref} {...contentProps}>
-            ***REMOVED***showArrow && (
+              {showArrow && (
                 <ChakraTooltip.Arrow>
                   <ChakraTooltip.ArrowTip />
                 </ChakraTooltip.Arrow>
               )}
-            ***REMOVED***content}
+              {content}
             </ChakraTooltip.Content>
           </ChakraTooltip.Positioner>
         </Portal>
       </ChakraTooltip.Root>
     )
-***REMOVED***
+  },
 )

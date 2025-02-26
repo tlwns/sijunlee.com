@@ -15,6 +15,6 @@ const skills = [
   'PostgreSQL',
   'Bash',
   'Git',
-***REMOVED***
+];
 
 export default skills;

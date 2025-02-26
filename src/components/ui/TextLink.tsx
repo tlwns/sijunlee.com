@@ -16,7 +16,7 @@ const TextLink = ({ to, children, underline = true }: TextLinkProps) => {
       href={to} // Use href for external links
       textDecorationColor='border'
       textDecorationThickness={1.1}
-    ***REMOVED***...(underline && { variant: 'underline' })}
+      {...(underline && { variant: 'underline' })}
       _hover={{
         textDecoration: 'none',
         color: 'blue.fg',
@@ -25,7 +25,7 @@ const TextLink = ({ to, children, underline = true }: TextLinkProps) => {
       target='_blank'
       rel='noopener noreferrer'
     >
-    ***REMOVED***children}
+      {children}
     </Link>
   ) : (
     <Link

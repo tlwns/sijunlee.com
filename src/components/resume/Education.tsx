@@ -9,7 +9,7 @@ interface Education {
 }
 
 interface EducationProps {
-  data: Education[***REMOVED***
+  data: Education[];
 }
 
 const Education = ({ data }: EducationProps) => {
@@ -25,10 +25,10 @@ const Education = ({ data }: EducationProps) => {
       >
         Education
       </Heading>
-    ***REMOVED***data.map((item, index) => (
+      {data.map((item, index) => (
         <Box key={index}>
           <Text letterSpacing={'wider'} fontWeight={'semibold'}>
-          ***REMOVED***item.degree}
+            {item.degree}
           </Text>
           <Text fontWeight={'light'} fontSize={'sm'}>
             <TextLink to={item.link}>{item.school}</TextLink>, {item.date}

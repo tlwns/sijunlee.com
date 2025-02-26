@@ -41,7 +41,7 @@ export const PopoverCloseTrigger = React.forwardRef<
       position='absolute'
       top='1'
       insetEnd='1'
-    ***REMOVED***...props}
+      {...props}
       asChild
       ref={ref}
     >

@@ -30,24 +30,24 @@ export const InputGroup = React.forwardRef<HTMLDivElement, InputGroupProps>(
 
     return (
       <Group ref={ref} {...rest}>
-      ***REMOVED***startElement && (
+        {startElement && (
           <InputElement pointerEvents="none" {...startElementProps}>
-          ***REMOVED***startElement}
+            {startElement}
           </InputElement>
         )}
-      ***REMOVED***React.cloneElement(child, {
+        {React.cloneElement(child, {
           ...(startElement && {
             ps: `calc(var(--input-height) - ${startOffset})`,
           }),
           ...(endElement && { pe: `calc(var(--input-height) - ${endOffset})` }),
           ...children.props,
         })}
-      ***REMOVED***endElement && (
+        {endElement && (
           <InputElement placement="end" {...endElementProps}>
-          ***REMOVED***endElement}
+            {endElement}
           </InputElement>
         )}
       </Group>
     )
-***REMOVED***
+  },
 )

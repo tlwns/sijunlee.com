@@ -21,10 +21,10 @@ export const Slider = React.forwardRef<HTMLDivElement, SliderProps>(
 
     return (
       <ChakraSlider.Root ref={ref} thumbAlignment="center" {...rest}>
-      ***REMOVED***label && !showValue && (
+        {label && !showValue && (
           <ChakraSlider.Label>{label}</ChakraSlider.Label>
         )}
-      ***REMOVED***label && showValue && (
+        {label && showValue && (
           <HStack justify="space-between">
             <ChakraSlider.Label>{label}</ChakraSlider.Label>
             <ChakraSlider.ValueText />
@@ -39,14 +39,14 @@ export const Slider = React.forwardRef<HTMLDivElement, SliderProps>(
         </ChakraSlider.Control>
       </ChakraSlider.Root>
     )
-***REMOVED***
+  },
 )
 
 function SliderThumbs(props: { value?: number[] }) {
   const { value } = props
   return (
     <For each={value}>
-    ***REMOVED***(_, index) => (
+      {(_, index) => (
         <ChakraSlider.Thumb key={index} index={index}>
           <ChakraSlider.HiddenInput />
         </ChakraSlider.Thumb>
@@ -66,17 +66,17 @@ const SliderMarks = React.forwardRef<HTMLDivElement, SliderMarksProps>(
 
     return (
       <ChakraSlider.MarkerGroup ref={ref}>
-      ***REMOVED***marks.map((mark, index) => {
+        {marks.map((mark, index) => {
           const value = typeof mark === "number" ? mark : mark.value
           const label = typeof mark === "number" ? undefined : mark.label
           return (
             <ChakraSlider.Marker key={index} value={value}>
               <ChakraSlider.MarkerIndicator />
-            ***REMOVED***label}
+              {label}
             </ChakraSlider.Marker>
           )
         })}
       </ChakraSlider.MarkerGroup>
     )
-***REMOVED***
+  },
 )

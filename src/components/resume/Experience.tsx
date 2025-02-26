@@ -6,11 +6,11 @@ interface Experience {
   link: string;
   position: string;
   date: string;
-  description: string[***REMOVED***
+  description: string[];
 }
 
 interface ExperienceProps {
-  data: Experience[***REMOVED***
+  data: Experience[];
 }
 
 const Experience = (data: ExperienceProps) => {
@@ -26,7 +26,7 @@ const Experience = (data: ExperienceProps) => {
       >
         Experience
       </Heading>
-    ***REMOVED***data.data.map((item, index) => (
+      {data.data.map((item, index) => (
         <Box key={index}>
           <Flex
             justifyContent={'space-between'}
@@ -35,7 +35,7 @@ const Experience = (data: ExperienceProps) => {
             <Flex flexDir={'column'} gap={1}>
               <Text letterSpacing={'wider'} fontWeight={'semibold'}>
                 <TextLink to={item.link} underline={false}>
-                ***REMOVED***item.company}
+                  {item.company}
                 </TextLink>
               </Text>
               <Text letterSpacing={'wider'}>{item.position}</Text>
@@ -49,12 +49,12 @@ const Experience = (data: ExperienceProps) => {
               }}
               mt={{ base: 6, md: 0 }}
             >
-            ***REMOVED***item.date}
+              {item.date}
             </Text>
           </Flex>
 
           <List.Root mt={6} fontWeight={'light'} ml={4} gap={2} fontSize={'sm'}>
-          ***REMOVED***item.description.map((desc, index) => (
+            {item.description.map((desc, index) => (
               <List.Item key={index}>{desc}</List.Item>
             ))}
           </List.Root>

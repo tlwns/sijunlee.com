@@ -1,7 +1,7 @@
 import { Flex, Heading, Text } from '@chakra-ui/react';
 
 interface SkillsProps {
-  data: string[***REMOVED***
+  data: string[];
 }
 
 const Skills = ({ data }: SkillsProps) => {
@@ -25,7 +25,7 @@ const Skills = ({ data }: SkillsProps) => {
         letterSpacing={'wider'}
         gap={4}
       >
-      ***REMOVED***data.map((skill, index) => (
+        {data.map((skill, index) => (
           <Text key={index}>{skill}</Text>
         ))}
       </Flex>

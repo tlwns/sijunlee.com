@@ -22,7 +22,7 @@ const Sidebar = () => {
         alignItems={{ base: 'center', lg: 'flex-start' }}
         width='100%'
       >
-      ***REMOVED***/* Headers */}
+        {/* Headers */}
         <Image
           src={'/images/profile.jpg'}
           alt={'Si Jun Lee'}
@@ -44,7 +44,7 @@ const Sidebar = () => {
         gap={8}
         width='100%'
       >
-      ***REMOVED***/* About me block */}
+        {/* About me block */}
         <Text letterSpacing={'widest'} fontWeight={'semibold'}>
           ABOUT
         </Text>
@@ -72,13 +72,13 @@ const Sidebar = () => {
           }}
         >
           <RouterNavLink to={isResumePage ? '/about' : '/resume'}>
-          ***REMOVED***isResumePage ? 'About Me' : 'Learn More'}
+            {isResumePage ? 'About Me' : 'Learn More'}
           </RouterNavLink>
         </Button>
       </Flex>
 
       <Flex flexDir='column' py={10} gap={8} width='100%'>
-      ***REMOVED***/* Contact block */}
+        {/* Contact block */}
         <ContactIcons />
         <Text
           textTransform={'uppercase'}

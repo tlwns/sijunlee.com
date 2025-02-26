@@ -4,7 +4,7 @@ import data from '../../data/contact';
 const ContactIcons = () => {
   return (
     <Flex gap={4}>
-    ***REMOVED***data.map((contact) => (
+      {data.map((contact) => (
         <Link
           aria-label={contact.label}
           key={contact.label}

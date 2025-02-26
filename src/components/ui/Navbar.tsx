@@ -25,8 +25,8 @@ const Navbar = () => {
         // stop text from wrapping
         whiteSpace={'nowrap'}
       >
-      ***REMOVED***/* Homepage */}
-      ***REMOVED***routes
+        {/* Homepage */}
+        {routes
           .filter((route) => route.index)
           .map((route) => (
             <Box key={route.path}>
@@ -34,8 +34,8 @@ const Navbar = () => {
             </Box>
           ))}
 
-      ***REMOVED***/* Other pages */}
-      ***REMOVED***routes
+        {/* Other pages */}
+        {routes
           .filter((route) => !route.index)
           .map((route) => (
             <Box key={route.path} fontWeight={'light'}>

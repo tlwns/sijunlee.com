@@ -11,7 +11,7 @@ export const CloseButton = React.forwardRef<
 >(function CloseButton(props, ref) {
   return (
     <ChakraIconButton variant="ghost" aria-label="Close" ref={ref} {...props}>
-    ***REMOVED***props.children ?? <LuX />}
+      {props.children ?? <LuX />}
     </ChakraIconButton>
   )
 })

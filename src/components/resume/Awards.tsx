@@ -8,7 +8,7 @@ interface Award {
 }
 
 interface AwardsProps {
-  data: Award[***REMOVED***
+  data: Award[];
 }
 
 const Awards = ({ data }: AwardsProps) => {
@@ -24,17 +24,17 @@ const Awards = ({ data }: AwardsProps) => {
       >
         Awards
       </Heading>
-    ***REMOVED***data.map((item, index) => (
+      {data.map((item, index) => (
         <Box key={index}>
           <Text letterSpacing={'wider'} fontWeight={'semibold'}>
-          ***REMOVED***item.title}
+            {item.title}
           </Text>
           <Text fontWeight={'light'} fontSize={'sm'}>
-          ***REMOVED***item.organization}, {item.date}
+            {item.organization}, {item.date}
           </Text>
           <List.Root>
             <List.Item fontWeight={'light'} fontSize={'sm'} mt={2} ml={4}>
-            ***REMOVED***item.description}
+              {item.description}
             </List.Item>
           </List.Root>
         </Box>

@@ -5,7 +5,7 @@ import * as React from 'react';
 interface DrawerContentProps extends ChakraDrawer.ContentProps {
   portalled?: boolean;
   portalRef?: React.RefObject<HTMLElement>;
-  offset?: ChakraDrawer.ContentProps['padding'***REMOVED***
+  offset?: ChakraDrawer.ContentProps['padding'];
 }
 
 export const DrawerContent = React.forwardRef<
@@ -17,7 +17,7 @@ export const DrawerContent = React.forwardRef<
     <Portal disabled={!portalled} container={portalRef}>
       <ChakraDrawer.Positioner padding={offset}>
         <ChakraDrawer.Content ref={ref} {...rest} asChild={false}>
-        ***REMOVED***children}
+          {children}
         </ChakraDrawer.Content>
       </ChakraDrawer.Positioner>
     </Portal>
@@ -33,7 +33,7 @@ export const DrawerCloseTrigger = React.forwardRef<
       position='absolute'
       top='2'
       insetEnd='2'
-    ***REMOVED***...props}
+      {...props}
       asChild
     >
       <CloseButton size='sm' ref={ref} />

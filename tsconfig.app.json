@@ -10,11 +10,6 @@
     ],
     "module": "ESNext",
     "skipLibCheck": true,
-    "paths": {
-      "@/*": [
-        "./src/*"
-      ]
-  ***REMOVED***
     /* Bundler mode */
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
@@ -28,7 +23,7 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true
-***REMOVED***
+  },
   "include": [
     "src"
   ]

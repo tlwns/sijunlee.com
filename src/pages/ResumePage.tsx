@@ -24,7 +24,7 @@ const ResumePage = () => {
       <Flex flexDir='column' gap={10} w={'100%'}>
         <MainHeader title={'Resume'} />
         <Flex flexDir='column' gap={14} w={'100%'}>
-        ***REMOVED***Object.entries(sections).map(([key, Section]) => (
+          {Object.entries(sections).map(([key, Section]) => (
             <Section key={key} />
           ))}
         </Flex>

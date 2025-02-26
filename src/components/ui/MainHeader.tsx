@@ -22,16 +22,16 @@ const MainHeader = ({ title, description, children }: MainHeaderProps) => {
         as={'h2'}
         fontSize={'2xl'}
       >
-      ***REMOVED***title}
+        {title}
       </Heading>
 
-    ***REMOVED***description && (
+      {description && (
         <Text fontWeight={'light'} fontSize={'sm'} letterSpacing={'wider'}>
-        ***REMOVED***description}
+          {description}
         </Text>
       )}
 
-    ***REMOVED***children}
+      {children}
     </Flex>
   );
 };

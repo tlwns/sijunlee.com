@@ -14,12 +14,12 @@ export const Checkbox = React.forwardRef<HTMLInputElement, CheckboxProps>(
       <ChakraCheckbox.Root ref={rootRef} {...rest}>
         <ChakraCheckbox.HiddenInput ref={ref} {...inputProps} />
         <ChakraCheckbox.Control>
-        ***REMOVED***icon || <ChakraCheckbox.Indicator />}
+          {icon || <ChakraCheckbox.Indicator />}
         </ChakraCheckbox.Control>
-      ***REMOVED***children != null && (
+        {children != null && (
           <ChakraCheckbox.Label>{children}</ChakraCheckbox.Label>
         )}
       </ChakraCheckbox.Root>
     )
-***REMOVED***
+  },
 )

@@ -25,7 +25,7 @@ const MainLayout = ({ children }: MainLayoutProps) => {
         py={12}
         px={10}
       >
-      ***REMOVED***children}
+        {children}
       </Flex>
     </Flex>
   );

@@ -13,12 +13,12 @@ export const Radio = React.forwardRef<HTMLInputElement, RadioProps>(
       <ChakraRadioGroup.Item ref={rootRef} {...rest}>
         <ChakraRadioGroup.ItemHiddenInput ref={ref} {...inputProps} />
         <ChakraRadioGroup.ItemIndicator />
-      ***REMOVED***children && (
+        {children && (
           <ChakraRadioGroup.ItemText>{children}</ChakraRadioGroup.ItemText>
         )}
       </ChakraRadioGroup.Item>
     )
-***REMOVED***
+  },
 )
 
 export const RadioGroup = ChakraRadioGroup.Root

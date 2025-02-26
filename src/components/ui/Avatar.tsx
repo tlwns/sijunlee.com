@@ -22,13 +22,13 @@ export const Avatar = React.forwardRef<HTMLDivElement, AvatarProps>(
     return (
       <ChakraAvatar.Root ref={ref} {...rest}>
         <AvatarFallback name={name} icon={icon}>
-        ***REMOVED***fallback}
+          {fallback}
         </AvatarFallback>
         <ChakraAvatar.Image src={src} srcSet={srcSet} loading={loading} />
-      ***REMOVED***children}
+        {children}
       </ChakraAvatar.Root>
     )
-***REMOVED***
+  },
 )
 
 interface AvatarFallbackProps extends ChakraAvatar.FallbackProps {
@@ -41,14 +41,14 @@ const AvatarFallback = React.forwardRef<HTMLDivElement, AvatarFallbackProps>(
     const { name, icon, children, ...rest } = props
     return (
       <ChakraAvatar.Fallback ref={ref} {...rest}>
-      ***REMOVED***children}
-      ***REMOVED***name != null && children == null && <>{getInitials(name)}</>}
-      ***REMOVED***name == null && children == null && (
+        {children}
+        {name != null && children == null && <>{getInitials(name)}</>}
+        {name == null && children == null && (
           <ChakraAvatar.Icon asChild={!!icon}>{icon}</ChakraAvatar.Icon>
         )}
       </ChakraAvatar.Fallback>
     )
-***REMOVED***
+  },
 )
 
 function getInitials(name: string) {
@@ -70,5 +70,5 @@ export const AvatarGroup = React.forwardRef<HTMLDivElement, AvatarGroupProps>(
         <Group gap="0" spaceX="-3" ref={ref} {...rest} />
       </ChakraAvatar.PropsProvider>
     )
-***REMOVED***
+  },
 )
