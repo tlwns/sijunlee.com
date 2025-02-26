@@ -1,10 +1,10 @@
 import { Flex } from '@chakra-ui/react';
 import MainLayout from '../layouts/MainLayout';
 import MainHeader from '../components/ui/MainHeader';
-import Education from '../components/Resume/Education';
-import Experience from '../components/Resume/Experience';
-import Awards from '../components/Resume/Awards';
-import Skills from '../components/Resume/Skills';
+import Education from '../components/resume/Education';
+import Experience from '../components/resume/Experience';
+import Awards from '../components/resume/Awards';
+import Skills from '../components/resume/Skills';
 
 import education from '../data/resume/education';
 import experience from '../data/resume/experience';
