@@ -12,6 +12,7 @@ const TextLink = ({ to, children, underline = true }: TextLinkProps) => {
 
   return isExternal ? (
     <Link
+      color={'inherit'}
       href={to} // Use href for external links
       textDecorationColor='gray.200'
       textDecorationThickness={1.1}
@@ -28,6 +29,7 @@ const TextLink = ({ to, children, underline = true }: TextLinkProps) => {
     </Link>
   ) : (
     <Link
+      color={'inherit'}
       asChild
       textDecorationColor='gray.200'
       textDecorationThickness={1.1}
