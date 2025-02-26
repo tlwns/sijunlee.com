@@ -1,6 +1,7 @@
 import { Button, Flex, Text, Link, Image } from '@chakra-ui/react';
 import ContactIcons from './ContactIcons';
 import { NavLink as RouterNavLink, useLocation } from 'react-router';
+import TextLink from './TextLink';
 
 const Sidebar = () => {
   const location = useLocation();
@@ -16,7 +17,7 @@ const Sidebar = () => {
         flexDir='column'
         py={14}
         borderBottomWidth={1.1}
-        borderBottomColor={'gray.300'}
+        borderBottomColor={'border.emphasized'}
         gap={8}
         alignItems={{ base: 'center', lg: 'flex-start' }}
         width='100%'
@@ -38,7 +39,7 @@ const Sidebar = () => {
       <Flex
         flexDir='column'
         borderBottomWidth={1.1}
-        borderBottomColor={'gray.300'}
+        borderBottomColor={'border.emphasized'}
         py={10}
         gap={8}
         width='100%'
@@ -50,20 +51,13 @@ const Sidebar = () => {
         <Text>
           Hi, I'm Si Jun Lee. I am computer science and philosophy double degree
           student at the{' '}
-          <Link
-            variant='underline'
-            href='https://www.unsw.edu.au/engineering/our-schools/computer-science-and-engineering'
-            target='_blank'
-            textDecorationColor={'gray.200'}
-            textDecorationThickness={1.1}
-            _hover={{
-              color: 'blue.700',
-              textDecorationColor: 'blue.700',
-              textDecoration: 'none',
-            }}
+          <TextLink
+            to={
+              'https://www.unsw.edu.au/engineering/our-schools/computer-science-and-engineering'
+            }
           >
             University of New South Wales
-          </Link>
+          </TextLink>
           , Australia.
         </Text>
         <Button
