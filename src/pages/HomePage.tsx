@@ -26,9 +26,8 @@ const HomePage = () => {
           </Text>
 
           <Text fontSize={'sm'}>
-            Source code available&nbsp;
             <TextLink to={'https://github.com/tlwns/personal-website'}>
-              here
+              View source code
             </TextLink>
             .
           </Text>

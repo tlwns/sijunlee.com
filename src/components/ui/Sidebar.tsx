@@ -24,7 +24,7 @@ const Sidebar = () => {
       >
         {/* Headers */}
         <Image
-          src={'/images/profile.jpg'}
+          src={'/images/profile.webp'}
           alt={'Si Jun Lee'}
           boxSize={'32'}
           fit='cover'
@@ -72,7 +72,7 @@ const Sidebar = () => {
           }}
         >
           <RouterNavLink to={isResumePage ? '/about' : '/resume'}>
-            {isResumePage ? 'About Me' : 'Learn More'}
+            {isResumePage ? 'About Me' : 'View Resume'}
           </RouterNavLink>
         </Button>
       </Flex>
