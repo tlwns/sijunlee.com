@@ -20,7 +20,7 @@ const sections = {
 
 const ResumePage = () => {
   return (
-    <MainLayout>
+    <MainLayout title='Resume' description="Si Jun Lee's resume. UNSW">
       <Flex flexDir='column' gap={10} w={'100%'}>
         <MainHeader title={'Resume'} />
         <Flex flexDir='column' gap={14} w={'100%'}>
