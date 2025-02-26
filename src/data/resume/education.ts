@@ -7,7 +7,7 @@ const education = [
 ***REMOVED***
 ***REMOVED***
     school: 'University of New South Wales',
-    degree: 'B.A. Philosophy',
+    degree: 'B.A. Philosophy, Minor in Japanese',
     date: '2021 - Present',
     link: 'https://www.unsw.edu.au/',
 ***REMOVED***
