@@ -5,7 +5,13 @@ const ContactIcons = () => {
   return (
     <Flex gap={4}>
     ***REMOVED***data.map((contact) => (
-        <Link key={contact.label} href={contact.link} target='_blank'>
+        <Link
+          aria-label={contact.label}
+          key={contact.label}
+          href={contact.link}
+          target='_blank'
+          rel='noopener noreferrer'
+        >
           <Icon
             color={'fg.muted'}
             as={contact.icon}
