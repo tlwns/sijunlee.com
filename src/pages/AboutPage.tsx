@@ -6,7 +6,7 @@ const AboutPage = () => {
   return (
     <MainLayout>
       <Flex flexDir='column' gap={10} w={'100%'}>
-        <MainHeader title={'About me'} description={'(In about 100 words)'} />
+        <MainHeader title={'About me'} description={'WIP'} />
       </Flex>
     </MainLayout>
   );
