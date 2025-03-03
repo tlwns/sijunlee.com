@@ -71,8 +71,8 @@ const Sidebar = () => {
             borderColor: 'blue.fg',
           }}
         >
-          <RouterNavLink to={isResumePage ? '/about' : '/resume'}>
-            {isResumePage ? 'About Me' : 'View Resume'}
+          <RouterNavLink to={isResumePage ? '/' : '/resume'}>
+            {isResumePage ? 'About This Site' : 'View Resume'}
           </RouterNavLink>
         </Button>
       </Flex>
