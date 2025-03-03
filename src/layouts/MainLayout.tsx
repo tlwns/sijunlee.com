@@ -22,10 +22,7 @@ const MainLayout = ({
       <title>{title === 'Si Jun Lee' ? title : `${title} - Si Jun Lee`}</title>
       <meta name='description' content={description} />
       <meta name='author' content='Si Jun Lee' />
-      <meta
-        name='keywords'
-        content='Si Jun, Sijun, Si Jun Lee, Sijun Lee, personal website, computer science, philosophy, UNSW, University of New South Wales, Sydney, Australia'
-      />
+      <meta name='keywords' content='Si Jun, Sijun, Si Jun Lee, Sijun Lee' />
       <Sidebar />
       <Flex
         aria-label='main'
