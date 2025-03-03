@@ -87,7 +87,7 @@ const Sidebar = () => {
           color={'fg.muted'}
         >
           © SI JUN LEE&nbsp;&nbsp;
-          <TextLink to={'https://sijun.lee.com'}>SIJUN.LEE.COM</TextLink>
+          <TextLink to={'https://sijunlee.com'}>SIJUNLEE.COM</TextLink>
         </Text>
       </Flex>
     </Flex>
