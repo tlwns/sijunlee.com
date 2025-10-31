@@ -1,0 +1,43 @@
+import { Box, Flex, Heading, Text } from '@chakra-ui/react';
+import ReactMarkdown from 'react-markdown';
+import { Prose } from '@/components/ui/prose';
+
+interface Faq {
+  question: string;
+  answer: string;
+}
+
+interface FaqProps {
+  data: Faq[];
+}
+
+const Faq = ({ data }: FaqProps) => {
+  return (
+    <Flex flexDir='column' gap={8}>
+      <Heading
+        textAlign={'center'}
+        as={'h3'}
+        textTransform={'uppercase'}
+        letterSpacing={'wider'}
+        mb={4}
+        fontSize={'lg'}
+      >
+        Frequently Asked Questions
+      </Heading>
+      {data.map((item, index) => (
+        <Box key={index}>
+          <Text letterSpacing={'wider'} fontWeight={'semibold'}>
+            {item.question}
+          </Text>
+          <Text fontWeight={'light'} fontSize={'sm'}>
+            <Prose>
+              <ReactMarkdown>{item.answer}</ReactMarkdown>
+            </Prose>
+          </Text>
+        </Box>
+      ))}
+    </Flex>
+  );
+};
+
+export default Faq;
