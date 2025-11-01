@@ -16,6 +16,7 @@ const Navbar = () => {
       height={14}
       position={'fixed'}
       px={8}
+      zIndex={1}
     >
       <Flex
         justify={'flex-start'}
