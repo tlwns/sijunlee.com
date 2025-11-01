@@ -29,11 +29,9 @@ const PrivacyPolicy = ({ data }: PrivacyPolicyProps) => {
           <Text letterSpacing={'wider'} fontWeight={'semibold'}>
             {item.title}
           </Text>
-          <Text fontWeight={'light'} fontSize={'sm'}>
-            <Prose>
-              <ReactMarkdown>{item.content}</ReactMarkdown>
-            </Prose>
-          </Text>
+          <Prose fontWeight={'light'} fontSize={'sm'}>
+            <ReactMarkdown>{item.content}</ReactMarkdown>
+          </Prose>
         </Box>
       ))}
     </Flex>

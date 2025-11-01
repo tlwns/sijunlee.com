@@ -29,11 +29,9 @@ const Faq = ({ data }: FaqProps) => {
           <Text letterSpacing={'wider'} fontWeight={'semibold'}>
             {item.question}
           </Text>
-          <Text fontWeight={'light'} fontSize={'sm'}>
-            <Prose>
-              <ReactMarkdown>{item.answer}</ReactMarkdown>
-            </Prose>
-          </Text>
+          <Prose fontWeight={'light'} fontSize={'sm'}>
+            <ReactMarkdown>{item.answer}</ReactMarkdown>
+          </Prose>
         </Box>
       ))}
     </Flex>
