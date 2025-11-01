@@ -5,7 +5,7 @@ import TextLink from '@/components/ui/TextLink';
 
 const HomePage = () => {
   return (
-    <MainLayout description="Si Jun Lee's personal website. Computer Science and Philosophy student at the University of New South Wales, Sydney. Casual academic (Tutor) at the School of Computer Science and Engineering, UNSW.">
+    <MainLayout>
       <Flex flexDir='column' gap={10} w={'100%'}>
         <MainHeader
           title={'About this site'}
