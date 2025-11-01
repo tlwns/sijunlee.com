@@ -52,7 +52,7 @@ const Sidebar = () => {
           ABOUT
         </Text>
         <Text>
-          Hi, I'm Si Jun Lee. I am a computer science and philosophy double
+          Hi, I&apos;m Si Jun Lee. I am a computer science and philosophy double
           degree student at the{' '}
           <TextLink
             to={
