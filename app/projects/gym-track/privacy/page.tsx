@@ -12,7 +12,7 @@ const PrivacyPolicyPage = () => {
   return (
     <MainLayout>
       <Flex flexDir='column' gap={10} w={'100%'}>
-        <MainHeader title='GymTrack – Privacy Policy' />
+        <MainHeader title='GymTrack' />
         <Flex flexDir='column' gap={14} w={'100%'}>
           {Object.entries(sections).map(([key, Section]) => (
             <Section key={key} />

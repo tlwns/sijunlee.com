@@ -10,7 +10,7 @@ const SupportPage = () => {
   return (
     <MainLayout>
       <Flex flexDir='column' gap={10} w={'100%'}>
-        <MainHeader title='GymTrack – Support' />
+        <MainHeader title='GymTrack' />
         <Flex flexDir='column' gap={14} w={'100%'}>
           {Object.entries(sections).map(([key, Section]) => (
             <Section key={key} />
