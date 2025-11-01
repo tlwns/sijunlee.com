@@ -38,7 +38,7 @@ export default function RootLayout({
             justify='center'
           >
             <Navbar />
-            <Flex flex={1} mt={14}>
+            <Flex flex={1} mt={14} maxW='90rem'>
               {children}
             </Flex>
           </Flex>
