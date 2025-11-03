@@ -5,6 +5,7 @@ import ContactIcons from './ContactIcons';
 import NextLink from 'next/link';
 import TextLink from './TextLink';
 import { usePathname } from 'next/dist/client/components/navigation';
+import NextImage from 'next/image';
 
 const Sidebar = () => {
   const pathname = usePathname();
@@ -27,13 +28,20 @@ const Sidebar = () => {
       >
         {/* Headers */}
         <Image
-          src={'/images/profile.webp'}
-          alt={'Si Jun Lee'}
+          asChild
           boxSize={'32'}
-          fit='cover'
+          fit={'cover'}
           borderRadius={'full'}
           objectPosition={'left bottom'}
-        />
+          alt={'Si Jun Lee'}
+        >
+          <NextImage
+            src={'/images/profile.webp'}
+            alt={'Si Jun Lee'}
+            width={2268}
+            height={2578}
+          />
+        </Image>
         <Text fontWeight={'bold'} fontSize={'2xl'} letterSpacing={'widest'}>
           SI JUN&nbsp;&nbsp;LEE
         </Text>
