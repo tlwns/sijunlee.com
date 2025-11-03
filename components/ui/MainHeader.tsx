@@ -19,7 +19,7 @@ const MainHeader = ({ title, description, children }: MainHeaderProps) => {
         textTransform={'uppercase'}
         letterSpacing={'widest'}
         fontWeight={'extrabold'}
-        as={'h2'}
+        as={'h1'}
         fontSize={'2xl'}
       >
         {title}
