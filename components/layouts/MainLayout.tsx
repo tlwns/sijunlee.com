@@ -16,6 +16,7 @@ const MainLayout = ({ children }: MainLayoutProps) => {
       <Sidebar />
       <Flex
         aria-label='main'
+        role='main'
         bg={'bg.subtle'}
         flex={1}
         my={14}
