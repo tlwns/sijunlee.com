@@ -12,6 +12,33 @@ import experience from './data/experience';
 import awards from './data/awards';
 import skills from './data/skills';
 
+const title = 'Resume';
+const description = "View Si Jun Lee's Resume — Full Stack Software Developer";
+const url = '/resume';
+
+export const metadata = {
+  title,
+  description,
+
+  alternates: {
+    canonical: url,
+  },
+
+  openGraph: {
+    title,
+    description,
+    url,
+    type: 'website',
+    // images: [
+    //   {
+    //     url: '/og-image.png',
+    //     width: 1200,
+    //     height: 630,
+    //   },
+    // ],
+  },
+};
+
 const sections = {
   Education: () => <Education data={education} />,
   Experience: () => <Experience data={experience} />,

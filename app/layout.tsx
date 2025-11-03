@@ -10,12 +10,32 @@ const inter = Inter({
   subsets: ['latin'],
 });
 
-const title = 'Si Jun Lee';
+const title = 'Si Jun Lee - Full-Stack Developer & Philosophy Enjoyer';
 const description = 'Full-Stack Developer & Philosophy Enjoyer';
 
 export const metadata: Metadata = {
-  title: { default: title, template: `%s | ${title}` },
+  title: { default: title, template: `%s • ${title}` },
   description,
+  metadataBase: new URL('https://sijunlee.com'),
+
+  openGraph: {
+    type: 'website',
+    locale: 'en_AU',
+    url: '/',
+    title,
+    description,
+    // images: [
+    //   {
+    //     url: '/og-image.png',
+    //     width: 1200,
+    //     height: 630,
+    //   },
+    // ],
+  },
+
+  alternates: {
+    canonical: '/',
+  },
 };
 
 export default function RootLayout({

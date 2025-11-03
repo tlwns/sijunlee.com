@@ -2,6 +2,9 @@ import { Flex } from '@chakra-ui/react';
 import MainLayout from '@/components/layouts/MainLayout';
 import MainHeader from '@/components/ui/MainHeader';
 
+export const metadata = {
+  title: 'About Me',
+};
 const AboutPage = () => {
   return (
     <MainLayout>

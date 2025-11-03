@@ -4,6 +4,33 @@ import MainHeader from '@/components/ui/MainHeader';
 import privacy from './data/privacy';
 import PrivacyPolicy from './components/PrivacyPolicy';
 
+const title = 'GymTrack Privacy Policy';
+const description = 'Understand how GymTrack handles your data and privacy.';
+const url = '/projects/gym-track/privacy';
+
+export const metadata = {
+  title,
+  description,
+
+  alternates: {
+    canonical: url,
+  },
+
+  openGraph: {
+    title,
+    description,
+    url,
+    type: 'website',
+    // images: [
+    //   {
+    //     url: '/og-image.png',
+    //     width: 1200,
+    //     height: 630,
+    //   },
+    // ],
+  },
+};
+
 const sections = {
   PrivacyPolicy: () => <PrivacyPolicy data={privacy} />,
 };
