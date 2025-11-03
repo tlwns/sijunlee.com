@@ -16,7 +16,7 @@ const Awards = ({ data }: AwardsProps) => {
     <Flex flexDir='column' gap={8}>
       <Heading
         textAlign={'center'}
-        as={'h3'}
+        as={'h2'}
         textTransform={'uppercase'}
         letterSpacing={'wider'}
         mb={4}
