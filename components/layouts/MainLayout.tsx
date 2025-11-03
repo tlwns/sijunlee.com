@@ -9,7 +9,7 @@ const MainLayout = ({ children }: MainLayoutProps) => {
   return (
     <Flex
       flex={1}
-      px={16}
+      px={{ base: 6, lg: 16 }}
       flexDir={{ base: 'column-reverse', lg: 'row' }}
       gap={20}
     >
