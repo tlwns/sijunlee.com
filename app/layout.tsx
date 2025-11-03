@@ -19,6 +19,10 @@ export const metadata: Metadata = {
   description,
   metadataBase: new URL('https://sijunlee.com'),
 
+  icons: {
+    icon: [{ url: '/favicon.svg' }],
+  },
+
   openGraph: {
     type: 'website',
     locale: 'en_AU',
