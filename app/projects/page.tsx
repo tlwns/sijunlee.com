@@ -11,6 +11,7 @@ const ProjectsPage = () => {
         flexDir='column'
         w={'100%'}
         gap={10}
+        py={{ base: 16, md: 24 }}
         maxW={{ base: '100%', xl: '90rem' }}
       >
         <MainHeader title={'Projects'} />

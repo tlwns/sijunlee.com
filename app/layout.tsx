@@ -55,17 +55,8 @@ export default function RootLayout({
     >
       <body>
         <Provider>
-          <Flex
-            dir='column'
-            minHeight='100svh'
-            bgColor='bg.muted'
-            justify='center'
-            bg={'bg.subtle'}
-          >
-            <Navbar />
-            <Flex flex={1} mt={20}>
-              {children}
-            </Flex>
+          <Flex dir='column' minHeight='100svh' justify='center'>
+            {children}
           </Flex>
         </Provider>
       </body>
