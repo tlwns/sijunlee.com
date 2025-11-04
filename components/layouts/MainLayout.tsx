@@ -6,12 +6,7 @@ interface MainLayoutProps {
 
 const MainLayout = ({ children }: MainLayoutProps) => {
   return (
-    <Flex
-      flex={1}
-      bg={'bg.subtle'}
-      px={{ base: 6, lg: 16, '2xl': 80 }}
-      role='main'
-    >
+    <Flex flex={1} bg={'bg.subtle'} role='main'>
       {children}
     </Flex>
   );

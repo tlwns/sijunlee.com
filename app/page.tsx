@@ -14,7 +14,7 @@ const HomePage = () => {
         w={'100%'}
         minH={'calc(100vh - 5rem)'}
         py={{ base: 16, md: 24 }}
-        px={{ base: 6, md: 12, '3xl': 16 }}
+        px={{ base: 12, md: 20, '2xl': 80 }}
       >
         <Flex
           direction={{ base: 'column', md: 'row' }}
