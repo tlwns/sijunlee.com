@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
-import './globals.css';
 import { Provider } from '@/components/ui/provider';
 import Navbar from '@/components/ui/Navbar';
 import { Flex } from '@chakra-ui/react';
@@ -49,8 +48,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang='en' suppressHydrationWarning={true}>
-      <body className={`${inter.variable} antialiased`}>
+    <html
+      lang='en'
+      suppressHydrationWarning={true}
+      className={`${inter.variable} antialiased`}
+    >
+      <body>
         <Provider>
           <Flex
             dir='column'

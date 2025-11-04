@@ -6,6 +6,14 @@ const chakraSystem = createSystem(defaultConfig, {
       color: 'gray.fg',
     },
   },
+  theme: {
+    tokens: {
+      fonts: {
+        heading: { value: `var(--font-inter)` },
+        body: { value: `var(--font-inter)` },
+      },
+    },
+  },
 });
 
 export default chakraSystem;
