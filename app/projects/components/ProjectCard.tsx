@@ -36,7 +36,13 @@ const ProjectCard = ({ data }: ProjectCardProps) => {
       h='100%'
       outline={'none'}
     >
-      <Card.Root overflow='hidden' w='100%' h='100%' className='group'>
+      <Card.Root
+        overflow='hidden'
+        w='100%'
+        h='100%'
+        className='group'
+        border={'none'}
+      >
         <Box position='relative' w='100%' pt='100%' overflow='hidden'>
           <Image
             asChild
