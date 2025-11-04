@@ -15,7 +15,6 @@ const NavLink = ({ path, label }: NavLinkProps) => {
         color: 'blue.fg',
       }}
       outline={'none'}
-      textTransform={'uppercase'}
     >
       <NextLink href={path}>{label}</NextLink>
     </Link>

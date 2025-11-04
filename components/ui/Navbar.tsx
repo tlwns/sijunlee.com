@@ -1,4 +1,4 @@
-import { Flex, Box } from '@chakra-ui/react';
+import { Flex, Box, Text } from '@chakra-ui/react';
 import { ColorModeButton } from '@/components/ui/color-mode';
 import NavLink from '@/components/ui/NavLink';
 
@@ -13,7 +13,7 @@ const Navbar = () => {
       justify={'center'}
       borderBottomColor={'border'}
       borderBottomWidth={1.1}
-      height={14}
+      height={20}
       position={'fixed'}
       px={8}
       zIndex={1}
@@ -32,16 +32,37 @@ const Navbar = () => {
             .filter((route) => route.index)
             .map((route) => (
               <Box key={route.path}>
-                <NavLink path={route.path} label={route.label} />
+                <Text
+                  fontWeight={'bold'}
+                  fontSize={'3xl'}
+                  letterSpacing={'tighter'}
+                >
+                  <NavLink path={route.path} label={route.label} />
+                </Text>
               </Box>
             ))}
 
           {/* Other pages */}
+        </Flex>{' '}
+        <Flex
+          justify={'flex-start'}
+          align={'center'}
+          gap={8}
+          letterSpacing={'wide'}
+          // stop text from wrapping
+          whiteSpace={'nowrap'}
+        >
           {routes
             .filter((route) => !route.index)
             .map((route) => (
               <Box key={route.path} fontWeight={'light'}>
-                <NavLink path={route.path} label={route.label} />
+                <Text
+                  fontWeight={'medium'}
+                  fontSize={'xl'}
+                  letterSpacing={'tighter'}
+                >
+                  <NavLink path={route.path} label={route.label} />
+                </Text>
               </Box>
             ))}
         </Flex>
