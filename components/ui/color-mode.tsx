@@ -12,7 +12,13 @@ export type ColorModeProviderProps = ThemeProviderProps;
 export function ColorModeProvider(props: ColorModeProviderProps) {
   return (
     <ClientOnly>
-      <ThemeProvider attribute='class' disableTransitionOnChange {...props} />
+      <ThemeProvider
+        attribute='class'
+        disableTransitionOnChange
+        {...props}
+        enableSystem
+        defaultTheme='system'
+      />
     </ClientOnly>
   );
 }
