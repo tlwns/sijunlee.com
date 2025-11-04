@@ -24,7 +24,7 @@ const Navbar = () => {
         height={20}
         position={'fixed'}
         px={8}
-        zIndex={2}
+        zIndex={3}
       >
         <Flex justify={'space-between'} maxW={'90rem'} flex={1}>
           <Flex
@@ -117,7 +117,7 @@ const Navbar = () => {
             w='100%'
             bg={'bg.subtle'}
             transition={{ duration: 1.2, ease: [0.42, 0.21, 0, 1] }}
-            zIndex={1}
+            zIndex={2}
           >
             {routes
               .filter((route) => !route.index)
