@@ -60,9 +60,10 @@ export default function RootLayout({
             minHeight='100svh'
             bgColor='bg.muted'
             justify='center'
+            bg={'bg.subtle'}
           >
             <Navbar />
-            <Flex flex={1} mt={14} maxW='90rem'>
+            <Flex flex={1} mt={20}>
               {children}
             </Flex>
           </Flex>
