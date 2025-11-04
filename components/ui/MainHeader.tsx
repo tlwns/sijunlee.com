@@ -15,13 +15,7 @@ const MainHeader = ({ title, description, children }: MainHeaderProps) => {
       borderColor={'border'}
       pb={10}
     >
-      <Heading
-        textTransform={'uppercase'}
-        letterSpacing={'widest'}
-        fontWeight={'extrabold'}
-        as={'h1'}
-        fontSize={'2xl'}
-      >
+      <Heading fontWeight={'bold'} as={'h1'} fontSize={'8xl'}>
         {title}
       </Heading>
 

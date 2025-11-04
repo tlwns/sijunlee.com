@@ -1,5 +1,5 @@
 const routes = [
-  { index: true, label: 'Si Jun Lee', path: '/' },
+  { index: true, label: 'Si Jun', path: '/' },
   // {
   //   label: 'About',
   //   path: '/about',

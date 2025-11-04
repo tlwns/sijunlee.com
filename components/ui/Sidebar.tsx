@@ -88,7 +88,13 @@ const Sidebar = () => {
         </Button>
       </Flex>
 
-      <Flex flexDir='column' py={10} gap={8} width='100%'>
+      <Flex
+        flexDir='column'
+        py={10}
+        gap={8}
+        width='100%'
+        alignItems='flex-start'
+      >
         {/* Contact block */}
         <ContactIcons />
         <Text

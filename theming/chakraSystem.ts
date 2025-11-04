@@ -7,6 +7,9 @@ const chakraSystem = createSystem(defaultConfig, {
     },
   },
   theme: {
+    breakpoints: {
+      '3xl': '120em',
+    },
     tokens: {
       fonts: {
         heading: { value: `var(--font-inter)` },
