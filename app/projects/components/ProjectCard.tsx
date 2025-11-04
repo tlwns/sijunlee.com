@@ -39,9 +39,16 @@ const ProjectCard = ({ data }: ProjectCardProps) => {
         w='100%'
         h='100%'
         className='group'
+        bg={'none'}
         border={'none'}
       >
-        <Box position='relative' w='100%' pt='100%' overflow='hidden'>
+        <Box
+          position='relative'
+          w='100%'
+          pt='100%'
+          overflow='hidden'
+          borderBottomRadius={'sm'}
+        >
           <Image
             asChild
             alt={data.title}

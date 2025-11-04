@@ -12,6 +12,7 @@ const ProjectsPage = () => {
         w={'100%'}
         gap={10}
         py={{ base: 16, md: 24 }}
+        px={{ base: 12, md: 18, '2xl': 40 }}
         maxW={{ base: '100%', xl: '90rem' }}
       >
         <MainHeader title={'Projects'} />
