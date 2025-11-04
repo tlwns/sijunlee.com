@@ -1,13 +1,11 @@
 import {
   Card,
   CardBody,
-  CardFooter,
   Image,
   Heading,
   Text,
   Flex,
   Link,
-  Button,
   Box,
 } from '@chakra-ui/react';
 import NextImage from 'next/image';
