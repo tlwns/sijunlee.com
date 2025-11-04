@@ -38,12 +38,26 @@ const sections = {
 const PrivacyPolicyPage = () => {
   return (
     <MainLayout>
-      <Flex flexDir='column' gap={10} w={'100%'}>
-        <MainHeader title='GymTrack' />
-        <Flex flexDir='column' gap={14} w={'100%'}>
-          {Object.entries(sections).map(([key, Section]) => (
-            <Section key={key} />
-          ))}
+      <Flex
+        flexDir='column'
+        gap={10}
+        w={'100%'}
+        minH={'calc(100vh - 5rem)'}
+        py={{ base: 16, md: 24 }}
+        px={{ base: 12, md: 18, '2xl': 40 }}
+      >
+        <MainHeader title={'GymTrack'} />
+        <Flex
+          flexDir='column'
+          gap={14}
+          w={'100%'}
+          px={{ base: 12, md: 48, lg: 180, xl: 240, '2xl': 480 }}
+        >
+          <Flex flexDir='column' gap={14} w={'100%'} align={'center'}>
+            {Object.entries(sections).map(([key, Section]) => (
+              <Section key={key} />
+            ))}
+          </Flex>
         </Flex>
       </Flex>
     </MainLayout>

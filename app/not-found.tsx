@@ -19,7 +19,6 @@ export default function NotFound() {
             fontSize={{ base: '6xl', md: '8xl' }}
             fontWeight='extrabold'
             letterSpacing='widest'
-            textTransform='uppercase'
           >
             404
           </Heading>
