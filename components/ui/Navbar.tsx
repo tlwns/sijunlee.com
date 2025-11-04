@@ -31,7 +31,6 @@ const Navbar = () => {
             justify={'flex-start'}
             align={'center'}
             gap={8}
-            letterSpacing={'wide'}
             // stop text from wrapping
             whiteSpace={'nowrap'}
           >
@@ -98,8 +97,8 @@ const Navbar = () => {
           </Flex>
         </Flex>
       </Flex>
-      {/* Mobile Navigation Drawer */}
 
+      {/* Mobile Navigation Drawer */}
       <AnimatePresence>
         {isOpen && (
           <MotionBox
