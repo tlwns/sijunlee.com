@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import { Provider } from '@/components/ui/provider';
-import Navbar from '@/components/ui/Navbar';
 import { Flex } from '@chakra-ui/react';
 
 const inter = Inter({
