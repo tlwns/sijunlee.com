@@ -33,7 +33,7 @@ const TextLink = ({ to, children, underline = true }: TextLinkProps) => {
       asChild
       textDecorationColor='border'
       textDecorationThickness={1.1}
-      variant='underline'
+      {...(underline && { variant: 'underline' })}
       _hover={{
         textDecoration: 'none',
         color: 'blue.fg',
