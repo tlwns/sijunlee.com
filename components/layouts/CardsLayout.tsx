@@ -13,6 +13,7 @@ const CardsLayout = ({ children }: MainLayoutProps) => {
       my={14}
       height={'fit-content'}
       py={12}
+      justify='center'
       px={{ base: 6, lg: 16 }}
     >
       {children}

@@ -43,7 +43,7 @@ const Navbar = () => {
             ))}
 
           {/* Other pages */}
-        </Flex>{' '}
+        </Flex>
         <Flex
           justify={'flex-start'}
           align={'center'}

@@ -7,11 +7,29 @@ import projects from './data/projects';
 const ProjectsPage = () => {
   return (
     <CardsLayout>
-      <Flex flexDir='column' gap={24} w={'100%'}>
+      <Flex
+        flexDir='column'
+        w={'100%'}
+        gap={10}
+        maxW={{ base: '100%', xl: '90rem' }}
+      >
         <MainHeader title={'Projects'} />
-        <Grid templateColumns='repeat(2, 1fr)' gap={6} alignItems='stretch'>
+        <Grid
+          templateColumns={{ base: 'repeat(1, 1fr)', md: 'repeat(2, 1fr)' }}
+          gapX={6}
+          gapY={20}
+          alignItems='stretch'
+        >
           {projects.map((data, index) => (
-            <GridItem key={index} colSpan={1}>
+            <GridItem
+              key={index}
+              colSpan={1}
+              maxW='30rem'
+              w={'100%'}
+              h={'100%'}
+              justifySelf={'center'}
+              flex={1}
+            >
               <ProjectCard data={data} />
             </GridItem>
           ))}
