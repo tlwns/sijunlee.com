@@ -12,6 +12,13 @@ export default function NotFound() {
         align='center'
         justify='center'
         minH='60vh'
+        px={{
+          base: 20,
+          md: 48,
+          lg: 180,
+          xl: 240,
+          '2xl': 480,
+        }}
       >
         <Flex flexDir='column' gap={6} align='center' textAlign='center'>
           <Heading
@@ -37,7 +44,6 @@ export default function NotFound() {
             fontSize='sm'
             fontWeight='light'
             letterSpacing='wider'
-            color='fg.muted'
             maxW='md'
           >
             The page you&apos;re looking for doesn&apos;t exist or has been
