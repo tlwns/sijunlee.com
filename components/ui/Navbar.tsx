@@ -105,7 +105,7 @@ const Navbar = () => {
             exit={{ y: '-100%' }}
             initial={{ y: '-100%' }}
             animate={{ y: 0 }}
-            position={'absolute'}
+            position={'fixed'}
             justifyContent={'center'}
             alignItems={'center'}
             display={{ base: 'flex', md: 'none' }}
