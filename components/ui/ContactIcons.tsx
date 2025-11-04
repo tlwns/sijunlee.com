@@ -1,9 +1,11 @@
+'use client';
+
 import { Icon, Link, Flex } from '@chakra-ui/react';
 import data from '@/data/contact';
 
 const ContactIcons = () => {
   return (
-    <Flex gap={4}>
+    <Flex gap={4} alignItems='flex-start'>
       {data.map((contact) => (
         <Link
           aria-label={contact.label}
@@ -13,6 +15,7 @@ const ContactIcons = () => {
           rel='noopener noreferrer'
         >
           <Icon
+            size={{ base: 'lg', md: '2xl' }}
             color={'fg.muted'}
             as={contact.icon}
             _hover={{
