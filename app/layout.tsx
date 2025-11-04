@@ -53,7 +53,7 @@ export default function RootLayout({
       className={`${inter.variable} antialiased`}
     >
       <body>
-        <Provider>
+        <Provider enableSystem={true} defaultTheme='system'>
           <Flex dir='column' minHeight='100svh' justify='center'>
             {children}
           </Flex>
