@@ -8,7 +8,7 @@ interface MainHeaderProps {
 
 const MainHeader = ({ title, description, children }: MainHeaderProps) => {
   return (
-    <Flex flexDir='column' gap={6} pb={24}>
+    <Flex flexDir='column' gap={16} pb={24}>
       <Heading
         fontWeight={'bold'}
         as={'h1'}
@@ -19,7 +19,12 @@ const MainHeader = ({ title, description, children }: MainHeaderProps) => {
         {title}
       </Heading>
       {description && (
-        <Text fontWeight={'light'} fontSize={'sm'} letterSpacing={'wider'}>
+        <Text
+          fontWeight={'light'}
+          fontSize={'lg'}
+          letterSpacing={'wider'}
+          textAlign={'center'}
+        >
           {description}
         </Text>
       )}

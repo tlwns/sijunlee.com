@@ -1,6 +1,9 @@
-import { Flex } from '@chakra-ui/react';
+import { Flex, GridItem, Grid } from '@chakra-ui/react';
 import MainLayout from '@/components/layouts/MainLayout';
 import MainHeader from '@/components/ui/MainHeader';
+
+import entries from './data/entries';
+import EntryCard from './components/EntryCard';
 
 const title = 'Blog';
 const description =
@@ -30,35 +33,39 @@ export const metadata = {
   },
 };
 
-const sections = {
-  Education: () => <Education data={education} />,
-  Experience: () => <Experience data={experience} />,
-  Awards: () => <Awards data={awards} />,
-  Skills: () => <Skills data={skills} />,
-};
-
 const BlogPage = () => {
   return (
     <MainLayout>
       <Flex
         flexDir='column'
-        gap={10}
         w={'100%'}
-        minH={'calc(100svh - 5rem)'}
+        gap={10}
         py={{ base: 16, md: 24 }}
         px={{ base: 12, md: 18, '2xl': 40 }}
+        maxW={{ base: '100%', xl: '90rem' }}
       >
-        <MainHeader title={'Resume'} />
-        <Flex
-          flexDir='column'
-          gap={14}
-          w={'100%'}
-          px={{ base: 12, md: 48, lg: 180, xl: 240, '2xl': 480 }}
+        <MainHeader
+          title={'Blog'}
+          description='Thoughts on Philosophy, Theology, and Programming.'
+        />
+        <Grid
+          templateColumns={{ base: 'repeat(1, 1fr)', md: 'repeat(2, 1fr)' }}
+          gapX={6}
+          gapY={20}
         >
-          {Object.entries(sections).map(([key, Section]) => (
-            <Section key={key} />
+          {entries.map((data, index) => (
+            <GridItem
+              key={index}
+              colSpan={1}
+              w={'100%'}
+              h={'100%'}
+              justifySelf={'center'}
+              flex={1}
+            >
+              <EntryCard data={data} />
+            </GridItem>
           ))}
-        </Flex>
+        </Grid>
       </Flex>
     </MainLayout>
   );
