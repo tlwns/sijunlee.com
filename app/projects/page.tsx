@@ -3,6 +3,35 @@ import { Flex, Grid, GridItem } from '@chakra-ui/react';
 import ProjectCard from './components/ProjectCard';
 import projects from './data/projects';
 import MainLayout from '@/components/layouts/MainLayout';
+import { Metadata } from 'next';
+
+const title = 'Projects';
+const description =
+  'A showcase of projects by Si Jun Lee, Full Stack Software Developer.';
+const url = '/projects';
+export const metadata: Metadata = {
+  title,
+  description,
+
+  openGraph: {
+    type: 'website',
+    locale: 'en_AU',
+    url,
+    title,
+    description,
+    // images: [
+    //   {
+    //     url: '/og-image.png',
+    //     width: 1200,
+    //     height: 630,
+    //   },
+    // ],
+  },
+
+  alternates: {
+    canonical: url,
+  },
+};
 
 const ProjectsPage = () => {
   return (
