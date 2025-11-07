@@ -1,4 +1,3 @@
-import CardsLayout from '@/components/layouts/CardsLayout';
 import MainHeader from '@/components/ui/MainHeader';
 import { Flex, Grid, GridItem } from '@chakra-ui/react';
 import ProjectCard from './components/ProjectCard';
