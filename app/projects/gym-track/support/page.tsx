@@ -1,8 +1,9 @@
-import { Flex } from '@chakra-ui/react';
+import { Flex, Heading } from '@chakra-ui/react';
 import MainLayout from '@/components/layouts/MainLayout';
 import MainHeader from '@/components/ui/MainHeader';
 import Faq from './components/Faq';
 import faq from './data/faq';
+import ContactForm from '@/components/ui/ContactForm';
 
 const title = 'GymTrack Support';
 const description = 'Get answers to frequently asked questions about GymTrack.';
@@ -41,7 +42,6 @@ const SupportPage = () => {
       <Flex
         flexDir='column'
         gap={10}
-        w={'100%'}
         minH={'calc(100svh - 5rem)'}
         py={{ base: 16, md: 24 }}
         px={{ base: 12, md: 18, '2xl': 40 }}
@@ -57,6 +57,18 @@ const SupportPage = () => {
           {Object.entries(sections).map(([key, Section]) => (
             <Section key={key} />
           ))}
+        </Flex>
+        <Flex flexDir='column' align={'center'} mt={'10'} gap={20}>
+          <Heading
+            fontWeight={'bold'}
+            as={'h2'}
+            fontSize={{ base: '3xl', md: '4xl', lg: '6xl' }}
+            letterSpacing={'tighter'}
+            textAlign={'center'}
+          >
+            Contact Support
+          </Heading>
+          <ContactForm />
         </Flex>
       </Flex>
     </MainLayout>
