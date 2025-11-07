@@ -3,10 +3,11 @@ import MainHeader from '@/components/ui/MainHeader';
 import { Flex, Grid, GridItem } from '@chakra-ui/react';
 import ProjectCard from './components/ProjectCard';
 import projects from './data/projects';
+import MainLayout from '@/components/layouts/MainLayout';
 
 const ProjectsPage = () => {
   return (
-    <CardsLayout>
+    <MainLayout>
       <Flex
         flexDir='column'
         w={'100%'}
@@ -37,7 +38,7 @@ const ProjectsPage = () => {
           ))}
         </Grid>
       </Flex>
-    </CardsLayout>
+    </MainLayout>
   );
 };
 
