@@ -3,7 +3,7 @@ const entries = [
     title: 'The art of living',
     description:
       'A comparative analysis of the Stoic and Socratic way of life.',
-    image: '/images/blog/The_School_of_Athens.jpg',
+    image: '/images/blog/school-of-athens.jpg',
     link: '/blog/school-of-athens.jpg',
   },
   {
