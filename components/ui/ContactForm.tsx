@@ -13,7 +13,7 @@ const ContactForm = () => {
   const [state, formAction] = useActionState(submitContactForm, initialState);
 
   return (
-    <form action={formAction} style={{ width: '100%' }}>
+    <form action={formAction} style={{ width: '80%' }}>
       <Fieldset.Root gap={4}>
         <Field.Root orientation='horizontal'>
           <Field.Label hidden>Your Name</Field.Label>
@@ -61,7 +61,6 @@ const ContactForm = () => {
           letterSpacing={'widest'}
           variant={'solid'}
           borderRadius={0}
-          w={'100%'}
           _hover={{
             bg: 'blue.fg',
           }}
