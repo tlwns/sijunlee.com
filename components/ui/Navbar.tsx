@@ -112,7 +112,7 @@ const Navbar = () => {
             gap={20}
             flexDir={'column'}
             top={20}
-            minH={'calc(100vh - 5rem)'}
+            minH={'calc(100svh - 5rem)'}
             w='100%'
             bg={'bg.subtle'}
             transition={{ duration: 1.2, ease: [0.42, 0.21, 0, 1] }}

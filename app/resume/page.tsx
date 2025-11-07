@@ -53,7 +53,7 @@ const ResumePage = () => {
         flexDir='column'
         gap={10}
         w={'100%'}
-        minH={'calc(100vh - 5rem)'}
+        minH={'calc(100svh - 5rem)'}
         py={{ base: 16, md: 24 }}
         px={{ base: 12, md: 18, '2xl': 40 }}
       >
