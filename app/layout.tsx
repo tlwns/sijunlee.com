@@ -54,9 +54,7 @@ export default function RootLayout({
     >
       <body>
         <Provider enableSystem={true} defaultTheme='system'>
-          <Flex dir='column' minHeight='100svh' justify='center'>
-            {children}
-          </Flex>
+          {children}
         </Provider>
       </body>
     </html>
