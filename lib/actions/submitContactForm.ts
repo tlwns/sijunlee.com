@@ -2,6 +2,7 @@
 
 import { ContactFormSchema } from '@/schemas/contactFormSchema';
 import { Resend } from 'resend';
+import EmailTemplate from '@/components/EmailTemplate';
 
 export type State = {
   errors?: {
@@ -44,21 +45,14 @@ export async function submitContactForm(prevState: State, formData: FormData) {
       from: `GymTrack Support Contact <${process.env.FROM_EMAIL}>`,
       to: [`${process.env.CONTACT_EMAIL}`],
       subject: `Contact Form Submission: ${subject}`,
-      html: `
-        <h1>New Contact Form Submission</h1>
-        <p><strong>Name:</strong> ${name}</p>
-        <p><strong>Email:</strong> ${email}</p>
-        <p><strong>Subject:</strong> ${subject}</p>
-        <p><strong>Message:</strong></p>
-        <p>${message}</p>
-      `,
+      react: EmailTemplate({ name, email, subject, message }),
     });
 
     if (error) {
-      throw new Error(error.message);
+      return { errors: { message: [error.message] }, inputs: rawData };
     }
     return {};
   } catch (error) {
-    throw new Error((error as Error).message);
+    return { errors: { message: [(error as Error).message] }, inputs: rawData };
   }
 }
