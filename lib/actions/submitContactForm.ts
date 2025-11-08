@@ -41,7 +41,7 @@ export async function submitContactForm(prevState: State, formData: FormData) {
 
   try {
     const { data, error } = await resend.emails.send({
-      from: 'GymTrack Support Contact <onboarding@resend.dev>',
+      from: `GymTrack Support Contact <${process.env.FROM_EMAIL}>`,
       to: [`${process.env.CONTACT_EMAIL}`],
       subject: `Contact Form Submission: ${subject}`,
       html: `
