@@ -9,11 +9,12 @@ const inter = Inter({
 });
 
 const title = 'Si Jun Lee - Full-Stack Developer & Philosophy Enjoyer';
+const author = 'Si Jun Lee';
 const description =
   'Welcome to the personal website of Si Jun Lee, a full-stack software developer who enjoys philosophy. Explore my projects, resume, and blog to learn more about my work and interests.';
 
 export const metadata: Metadata = {
-  title: { default: title, template: `%s • ${title}` },
+  title: { default: title, template: `%s • ${author}` },
   description,
   metadataBase: new URL('https://sijunlee.com'),
 
