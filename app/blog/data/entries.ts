@@ -1,24 +1,24 @@
 const entries = [
   {
-    title: 'The art of living',
+    slug: 'art-of-living',
+    title: 'The Art of Living',
     description:
       'A comparative analysis of the Stoic and Socratic way of life.',
     image: '/images/blog/school-of-athens.jpg',
-    link: '/blog/school-of-athens.jpg',
   },
   {
-    title: "Aristotle's account of Akrasia",
+    slug: 'aristotles-account-of-akrasia',
+    title: "Aristotle's Account of Akrasia",
     description:
       'An interpretative essay on weakness of will in Book VII of the Nicomachean Ethics.',
     image: '/images/blog/aristotle.png',
-    link: '/blog/Aristotle',
   },
   {
-    title: 'Chrysippus on determinism and moral responsibility',
+    slug: 'chrysippus-on-determinism-and-moral-responsibility',
+    title: 'Chrysippus on Determinism and Moral Responsibility',
     description:
       "An analysis of Chrysippus' compatibilist account as presented in Cicero's 'On Fate' and Gellius' 'Attic Nights.'",
     image: '/images/blog/cylinder-and-cone.png',
-    link: '/blog/Chrysippus',
   },
 ];
 

@@ -4,17 +4,15 @@ import {
   Image,
   Heading,
   Text,
-  Flex,
   Link,
-  Box,
   AspectRatio,
 } from '@chakra-ui/react';
 import NextImage from 'next/image';
 
 interface Entry {
+  slug: string;
   title: string;
   description: string;
-  link: string;
   tags?: string[];
   image?: string;
 }
@@ -26,7 +24,7 @@ interface EntryCardProps {
 const EntryCard = ({ data }: EntryCardProps) => {
   return (
     <Link
-      href={data.link}
+      href={`/blog/${data.slug}`}
       _hover={{ textDecoration: 'none' }}
       aria-label={data.title}
       target='_blank'
