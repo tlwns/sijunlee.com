@@ -17,7 +17,7 @@ const entries = [
     slug: 'chrysippus-on-determinism-and-moral-responsibility',
     title: 'Chrysippus on Determinism and Moral Responsibility',
     description:
-      "An analysis of Chrysippus' compatibilist account as presented in Cicero's  _On Fate_ and Gellius' _Attic Nights_,",
+      "An analysis of Chrysippus' compatibilist account as presented in Cicero's  _On Fate_ and Gellius' _Attic Nights_.",
     image: '/images/blog/cylinder-and-cone.png',
   },
 ];
