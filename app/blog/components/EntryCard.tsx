@@ -72,7 +72,7 @@ const EntryCard = ({ data }: EntryCardProps) => {
           >
             {data.title}
           </Heading>
-          <Text fontWeight='light' letterSpacing='tighter'>
+          <Text fontWeight='light' letterSpacing='tighter' asChild>
             <Prose>
               <Markdown>{data.description}</Markdown>
             </Prose>
