@@ -1,3 +1,4 @@
+import { Prose } from '@/components/ui/prose';
 import {
   Card,
   CardBody,
@@ -8,6 +9,7 @@ import {
   AspectRatio,
 } from '@chakra-ui/react';
 import NextImage from 'next/image';
+import Markdown from 'react-markdown';
 
 interface Entry {
   slug: string;
@@ -27,7 +29,6 @@ const EntryCard = ({ data }: EntryCardProps) => {
       href={`/blog/${data.slug}`}
       _hover={{ textDecoration: 'none' }}
       aria-label={data.title}
-      target='_blank'
       rel='noopener noreferrer'
       w='100%'
       h='100%'
@@ -72,7 +73,9 @@ const EntryCard = ({ data }: EntryCardProps) => {
             {data.title}
           </Heading>
           <Text fontWeight='light' letterSpacing='tighter'>
-            {data.description}
+            <Prose>
+              <Markdown>{data.description}</Markdown>
+            </Prose>
           </Text>
         </CardBody>
       </Card.Root>

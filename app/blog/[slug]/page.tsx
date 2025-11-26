@@ -7,6 +7,7 @@ import ReactMarkdown from 'react-markdown';
 import { Prose } from '@/components/ui/prose';
 import { promises as fs } from 'fs';
 import path from 'path';
+import Markdown from 'react-markdown';
 
 interface BlogPostPageProps {
   params: Promise<{
@@ -71,7 +72,9 @@ const BlogPostPage = async ({ params }: BlogPostPageProps) => {
                 }}
                 fontSize={{ base: 'lg', md: '2xl' }}
               >
-                {entry.description}
+                <Prose>
+                  <Markdown>{entry.description}</Markdown>
+                </Prose>
               </Heading>
             </Flex>
           </Flex>
