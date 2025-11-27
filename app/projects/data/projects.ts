@@ -4,14 +4,14 @@ const projects = [
     description:
       'A mobile app to automatically track gym workouts using geofencing',
     tags: ['react-native', 'expo', 'geofencing', 'sqlite'],
-    image: '/images/projects/gym-track.png',
+    image: '/images/projects/gym-track.webp',
     link: 'https://testflight.apple.com/join/TFY5H4YN',
   },
   {
     title: 'Lyrics to PowerPoint',
     description: 'Convert song lyrics to PowerPoint presentations',
     tags: ['nextjs', 'fastapi'],
-    image: '/images/projects/lyrics-to-pptx.png',
+    image: '/images/projects/lyrics-to-pptx.webp',
     link: 'https://lyrics-to-pptx-web.vercel.app',
   },
 ];
