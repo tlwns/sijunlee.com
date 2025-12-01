@@ -5,7 +5,7 @@ const projects = [
       'A mobile app to automatically track gym workouts using geofencing',
     tags: ['react-native', 'expo', 'geofencing', 'sqlite'],
     image: '/images/projects/gym-track.webp',
-    link: 'https://testflight.apple.com/join/TFY5H4YN',
+    link: 'https://apps.apple.com/au/app/gymtrack-auto-log-workouts/id6754352172',
   },
   {
     title: 'Lyrics to PowerPoint',
