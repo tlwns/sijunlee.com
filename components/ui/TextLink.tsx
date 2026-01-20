@@ -21,6 +21,10 @@ const TextLink = ({ to, children, underline = true }: TextLinkProps) => {
         textDecoration: 'none',
         color: 'blue.fg',
       }}
+      css={{
+        overflowWrap: 'anywhere',
+        wordBreak: 'break-word',
+      }}
       outline='none'
       target='_blank'
       rel='noopener noreferrer'
@@ -32,6 +36,10 @@ const TextLink = ({ to, children, underline = true }: TextLinkProps) => {
       color={'inherit'}
       asChild
       textDecorationColor='fg'
+      css={{
+        overflowWrap: 'anywhere',
+        wordBreak: 'break-word',
+      }}
       textDecorationThickness={1.1}
       {...(underline && { variant: 'underline' })}
       _hover={{
