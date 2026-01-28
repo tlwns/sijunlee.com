@@ -12,6 +12,17 @@ interface BlogPostPageProps {
   }>;
 }
 
+export async function generateMetadata({ params }: BlogPostPageProps) {
+  const { slug } = await params;
+  const entry = entries.find((entry) => entry.slug === slug);
+  if (!entry) {
+    return {};
+  }
+
+  const { metadata } = await import(`../data/content/${slug}.mdx`);
+  return metadata;
+}
+
 export async function generateStaticParams() {
   return entries.map((entry) => ({
     slug: entry.slug,
