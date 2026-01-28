@@ -48,7 +48,7 @@ const BlogPostPage = async ({ params }: BlogPostPageProps) => {
             md: 'row',
           }}
           w={'100%'}
-          h={500}
+          h={{ base: 'auto', md: 500 }}
         >
           {/* Header row */}
           <Flex
