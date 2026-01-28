@@ -34,7 +34,8 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
-    "**/*.mts"
+    "**/*.mts",
+    "app/blog/data/content/uni-work-disclaimer.tsx"
   ],
   "exclude": [
     "node_modules"

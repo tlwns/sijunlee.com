@@ -1,9 +1,14 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Inter, Source_Serif_4 } from 'next/font/google';
 import { Provider } from '@/components/ui/provider';
 
 const inter = Inter({
   variable: '--font-inter',
+  subsets: ['latin'],
+});
+
+const sourceSerif = Source_Serif_4({
+  variable: '--font-source-serif-4',
   subsets: ['latin'],
 });
 
@@ -50,7 +55,7 @@ export default function RootLayout({
     <html
       lang='en'
       suppressHydrationWarning={true}
-      className={`${inter.variable} antialiased`}
+      className={`${inter.variable} ${sourceSerif.variable} antialiased`}
     >
       <body>
         <Provider enableSystem={true} defaultTheme='system'>
