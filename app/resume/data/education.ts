@@ -2,13 +2,13 @@ const education = [
   {
     school: 'University of New South Wales',
     degree: 'B.S. Computer Science',
-    date: '2021 - Present',
+    date: '2021 - 2025',
     link: 'https://www.unsw.edu.au/',
   },
   {
     school: 'University of New South Wales',
     degree: 'B.A. Philosophy, Minor in Japanese',
-    date: '2021 - Present',
+    date: '2021 - 2025',
     link: 'https://www.unsw.edu.au/',
   },
   {
