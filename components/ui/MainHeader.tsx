@@ -12,7 +12,7 @@ const MainHeader = ({ title, description, children }: MainHeaderProps) => {
       <Heading
         fontWeight={'bold'}
         as={'h1'}
-        fontSize={{ base: '4xl', md: '5xl', xl: '7xl' }}
+        fontSize={{ base: '4xl', md: '5xl', lg: '3xl', xl: '7xl' }}
         letterSpacing={'tighter'}
         textAlign={'center'}
       >
