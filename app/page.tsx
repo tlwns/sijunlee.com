@@ -13,7 +13,7 @@ const HomePage = () => {
         justify={'space-between'}
         w={'100%'}
         minH={'calc(100svh - 5rem)'}
-        py={{ base: 12, md: 16, lg: 4, xl: 12, '2xl': 24 }}
+        py={{ base: 12, md: 16, lg: 8, '2xl': 24 }}
         px={{ base: 12, md: 20, lg: 32, xl: 48, '2xl': 80 }}
       >
         <Flex
