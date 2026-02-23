@@ -39,10 +39,10 @@ const BlogPage = () => {
       <Flex
         flexDir='column'
         w={'100%'}
-        gap={10}
-        py={{ base: 16, md: 24 }}
-        px={{ base: 12, md: 18, '2xl': 40 }}
-        maxW={{ base: '100%', xl: '90rem' }}
+        gap={8}
+        py={{ base: 12, md: 16 }}
+        px={{ base: 8, md: 12, xl: 20, '2xl': 40 }}
+        maxW={{ base: '100%', xl: '75rem' }}
       >
         <MainHeader
           title={'Blog'}
@@ -51,7 +51,7 @@ const BlogPage = () => {
         <Grid
           templateColumns={{ base: 'repeat(1, 1fr)', md: 'repeat(2, 1fr)' }}
           gapX={6}
-          gapY={20}
+          gapY={12}
         >
           {entries.map((data, index) => (
             <GridItem
