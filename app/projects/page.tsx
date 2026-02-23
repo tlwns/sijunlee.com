@@ -39,24 +39,32 @@ const ProjectsPage = () => {
       <Flex
         flexDir='column'
         w={'100%'}
-        gap={{ base: 6, md: 8 }}
-        py={{ base: 10, md: 16 }}
-        px={{ base: 6, md: 10, lg: 12, xl: 24 }}
-        maxW={{ base: '100%', lg: '56rem', xl: '64rem' }}
-        mx='auto'
+        gap={10}
+        py={{ base: 16, md: 24 }}
+        px={{ base: 12, md: 18, '2xl': 40 }}
+        maxW={{ base: '100%', xl: '90rem' }}
       >
         <MainHeader title={'Projects'} />
         <Grid
           templateColumns={{ base: 'repeat(1, 1fr)', md: 'repeat(2, 1fr)' }}
-          gapX={{ base: 6, lg: 8, xl: 10 }}
-          gapY={{ base: 10, md: 12, xl: 14 }}
-          alignItems='stretch'
+          gapX={{
+            base: 4,
+            md: 6,
+            lg: 8,
+            xl: 10,
+          }}
+          gapY={{
+            base: 10,
+            md: 12,
+            lg: 14,
+            xl: 16,
+          }}
         >
           {projects.map((data, index) => (
             <GridItem
               key={index}
               colSpan={1}
-              maxW={{ base: '100%', md: '20rem', lg: '22rem', xl: '24rem' }}
+              maxW={{ base: '100%', md: '22rem', lg: '24rem' }}
               w={'100%'}
               h={'100%'}
               justifySelf={'center'}
