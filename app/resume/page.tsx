@@ -55,14 +55,14 @@ const ResumePage = () => {
         w={'100%'}
         minH={'calc(100svh - 5rem)'}
         py={{ base: 16, md: 24 }}
-        px={{ base: 12, md: 18, '2xl': 40 }}
+        px={{ base: 12, md: 18, lg: 24, xl: 32, '2xl': 40 }}
       >
         <MainHeader title={'Resume'} />
         <Flex
           flexDir='column'
           gap={14}
           w={'100%'}
-          px={{ base: 12, md: 48, lg: 180, xl: 240, '2xl': 480 }}
+          px={{ base: 12, md: 48, lg: 64, xl: 80, '2xl': 96 }}
         >
           {Object.entries(sections).map(([key, Section]) => (
             <Section key={key} />
