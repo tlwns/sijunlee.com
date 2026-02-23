@@ -15,7 +15,7 @@ const MainLayout = ({ children }: MainLayoutProps) => {
   return (
     <Flex flex={1} role='main'>
       <Navbar />
-      <Flex flex={1} mt={20} zIndex={1} justify={'center'}>
+      <Flex flex={1} mt={{ base: 12, md: 16 }} zIndex={1} justify={'center'}>
         {children}
       </Flex>
       <Warp

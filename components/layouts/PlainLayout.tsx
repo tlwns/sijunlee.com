@@ -11,7 +11,7 @@ const PlainLayout = ({ children }: MainLayoutProps) => {
   return (
     <Flex flex={1} role='main' bgColor={'bg.subtle'}>
       <Navbar />
-      <Flex flex={1} mt={20} zIndex={1} justify={'center'}>
+      <Flex flex={1} mt={{ base: 12, md: 16 }} zIndex={1} justify={'center'}>
         {children}
       </Flex>
     </Flex>

@@ -41,7 +41,12 @@ const BlogPostPage = async ({ params }: BlogPostPageProps) => {
 
   return (
     <PlainLayout>
-      <Flex flexDir='column' gap={10} w={'100%'} minH={'calc(100svh - 5rem)'}>
+      <Flex
+        flexDir='column'
+        gap={10}
+        w={'100%'}
+        minH={{ base: 'calc(100svh - 5rem)', md: 'calc(100svh - 4rem)' }}
+      >
         <Flex
           flexDir={{
             base: 'column',

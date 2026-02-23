@@ -12,7 +12,7 @@ const HomePage = () => {
         gap={{ base: 8, md: 10, '2xl': 12 }}
         justify={'space-between'}
         w={'100%'}
-        minH={'calc(100svh - 5rem)'}
+        minH={{ base: 'calc(100svh - 5rem)', md: 'calc(100svh - 4rem)' }}
         py={{ base: 12, md: 16, lg: 8, '2xl': 24 }}
         px={{ base: 12, md: 20, lg: 32, xl: 48, '2xl': 80 }}
       >
