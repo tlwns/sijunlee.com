@@ -14,7 +14,7 @@ const HomePage = () => {
         w={'100%'}
         minH={'calc(100svh - 5rem)'}
         py={{ base: 12, md: 16, '2xl': 24 }}
-        px={{ base: 12, md: 20, '2xl': 80 }}
+        px={{ base: 12, md: 20, lg: 32, xl: 48, '2xl': 80 }}
       >
         <Flex
           direction={{ base: 'column', md: 'row' }}
@@ -29,7 +29,8 @@ const HomePage = () => {
               base: '5rem',
               sm: '6rem',
               md: '7rem',
-              lg: '7.5rem',
+              lg: '7rem',
+              xl: '8rem',
               '2xl': '10rem',
             }}
             whiteSpace='pre-line'
@@ -44,8 +45,8 @@ const HomePage = () => {
             boxSize={{
               base: '120px',
               md: '140px',
-              lg: '160px',
-              xl: '180px',
+              lg: '140px',
+              xl: '160px',
               '2xl': '200px',
             }}
             fit={'cover'}
@@ -74,7 +75,13 @@ const HomePage = () => {
             maxW={{ base: 'full', md: '40%', lg: '50%', xl: '60%' }}
           >
             <Text
-              fontSize={{ base: 'lg', md: 'xl', lg: '2xl', '2xl': '4xl' }}
+              fontSize={{
+                base: 'lg',
+                md: 'xl',
+                lg: 'xl',
+                xl: '2xl',
+                '2xl': '4xl',
+              }}
               fontWeight={'medium'}
               letterSpacing={'tighter'}
             >
