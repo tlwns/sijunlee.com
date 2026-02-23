@@ -42,7 +42,7 @@ const ProjectsPage = () => {
         gap={{ base: 6, md: 8 }}
         py={{ base: 10, md: 16 }}
         px={{ base: 6, md: 10, lg: 12, xl: 24 }}
-        maxW={{ base: '100%', lg: '64rem', xl: '75rem' }}
+        maxW={{ base: '100%', lg: '56rem', xl: '64rem' }}
         mx='auto'
       >
         <MainHeader title={'Projects'} />
@@ -56,7 +56,7 @@ const ProjectsPage = () => {
             <GridItem
               key={index}
               colSpan={1}
-              maxW={{ base: '100%', md: '24rem', lg: '26rem', xl: '28rem' }}
+              maxW={{ base: '100%', md: '20rem', lg: '22rem', xl: '24rem' }}
               w={'100%'}
               h={'100%'}
               justifySelf={'center'}
