@@ -21,7 +21,7 @@ const Navbar = () => {
         justify={'center'}
         borderBottomColor={'border'}
         borderBottomWidth={1.1}
-        height={20}
+        height={{ base: 20, md: 16 }}
         position={'fixed'}
         px={8}
         zIndex={3}
@@ -30,7 +30,7 @@ const Navbar = () => {
           <Flex
             justify={'flex-start'}
             align={'center'}
-            gap={8}
+            gap={{ base: 8, md: 6 }}
             // stop text from wrapping
             whiteSpace={'nowrap'}
           >
@@ -48,7 +48,7 @@ const Navbar = () => {
                 >
                   <Text
                     fontWeight={'bold'}
-                    fontSize={'3xl'}
+                    fontSize={{ base: '3xl', md: '2xl' }}
                     letterSpacing={'tighter'}
                   >
                     <NavLink path={route.path} label={route.label} />
@@ -62,7 +62,7 @@ const Navbar = () => {
             justify={'flex-start'}
             display={{ base: 'none', md: 'flex' }}
             align={'center'}
-            gap={8}
+            gap={{ base: 8, md: 6 }}
             letterSpacing={'wide'}
             // stop text from wrapping
             whiteSpace={'nowrap'}
@@ -73,7 +73,7 @@ const Navbar = () => {
                 <Box key={route.path} fontWeight={'light'}>
                   <Text
                     fontWeight={'medium'}
-                    fontSize={'xl'}
+                    fontSize={{ base: 'xl', md: 'lg' }}
                     letterSpacing={'tighter'}
                   >
                     <NavLink path={route.path} label={route.label} />

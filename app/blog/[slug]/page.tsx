@@ -12,6 +12,17 @@ interface BlogPostPageProps {
   }>;
 }
 
+export async function generateMetadata({ params }: BlogPostPageProps) {
+  const { slug } = await params;
+  const entry = entries.find((entry) => entry.slug === slug);
+  if (!entry) {
+    return {};
+  }
+
+  const { metadata } = await import(`../data/content/${slug}.mdx`);
+  return metadata;
+}
+
 export async function generateStaticParams() {
   return entries.map((entry) => ({
     slug: entry.slug,
@@ -30,14 +41,19 @@ const BlogPostPage = async ({ params }: BlogPostPageProps) => {
 
   return (
     <PlainLayout>
-      <Flex flexDir='column' gap={10} w={'100%'} minH={'calc(100svh - 5rem)'}>
+      <Flex
+        flexDir='column'
+        gap={10}
+        w={'100%'}
+        minH={{ base: 'calc(100svh - 5rem)', md: 'calc(100svh - 4rem)' }}
+      >
         <Flex
           flexDir={{
             base: 'column',
             md: 'row',
           }}
           w={'100%'}
-          h={500}
+          h={{ base: 'auto', md: 500 }}
         >
           {/* Header row */}
           <Flex

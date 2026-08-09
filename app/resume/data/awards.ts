@@ -1,5 +1,11 @@
 const awards = [
   {
+    title: 'The Douglas McCallum Prize',
+    organization: 'University of New South Wales',
+    date: '2025',
+    description: 'For the best performance in Philosophy.',
+  },
+  {
     title: "Faculty of Arts Dean's List",
     organization: 'University of New South Wales',
     date: '2024',

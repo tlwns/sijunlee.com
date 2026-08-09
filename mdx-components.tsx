@@ -6,7 +6,7 @@ const components: MDXComponents = {
   h1: ({ children }) => (
     <Heading
       as='h1'
-      fontSize={{ base: '2rem', md: '2.5rem', lg: '3rem' }}
+      fontSize={{ base: '1.75rem', md: '2.25rem', lg: '2.5rem' }}
       fontWeight='bold'
       mt={{ base: '2.5rem', md: '3rem' }}
       mb={{ base: '1.25rem', md: '1.5rem' }}
@@ -19,7 +19,7 @@ const components: MDXComponents = {
   h2: ({ children }) => (
     <Heading
       as='h2'
-      fontSize={{ base: '1.75rem', md: '2rem', lg: '2.25rem' }}
+      fontSize={{ base: '1.5rem', md: '1.75rem', lg: '2rem' }}
       fontWeight='semibold'
       mt={{ base: '2rem', md: '2.5rem' }}
       mb={{ base: '1rem', md: '1.25rem' }}
@@ -32,7 +32,7 @@ const components: MDXComponents = {
   h3: ({ children }) => (
     <Heading
       as='h3'
-      fontSize={{ base: '1.5rem', md: '1.75rem', lg: '2rem' }}
+      fontSize={{ base: '1.25rem', md: '1.5rem', lg: '1.75rem' }}
       fontWeight='semibold'
       mt={{ base: '1.75rem', md: '2rem' }}
       mb={{ base: '0.875rem', md: '1rem' }}
@@ -44,7 +44,7 @@ const components: MDXComponents = {
   h4: ({ children }) => (
     <Heading
       as='h4'
-      fontSize={{ base: '1.25rem', md: '1.5rem' }}
+      fontSize={{ base: '1.125rem', md: '1.25rem' }}
       fontWeight='medium'
       mt={{ base: '1.5rem', md: '1.75rem' }}
       mb={{ base: '0.75rem', md: '0.875rem' }}
@@ -55,7 +55,7 @@ const components: MDXComponents = {
   p: ({ children }) => (
     <Text
       fontFamily={'var(--font-source-serif-4)'}
-      fontSize={{ base: '1.125rem', md: '1.25rem', lg: '1.3125rem' }}
+      fontSize={{ base: '1rem', md: '1.125rem' }}
       lineHeight={{ base: '1.75', md: '1.8' }}
       mb={{ base: '1.25rem', md: '1.5rem' }}
       fontWeight='400'
@@ -78,7 +78,7 @@ const components: MDXComponents = {
       as='ul'
       pl={{ base: '1.5rem', md: '2rem' }}
       mb={{ base: '1.25rem', md: '1.5rem' }}
-      fontSize={{ base: '18px', md: '20px', lg: '21px' }}
+      fontSize={{ base: '1rem', md: '1.125rem' }}
       lineHeight={{ base: '1.8', md: '1.85' }}
       spaceY={{ base: 2.5, md: 3 }}
     >
@@ -90,7 +90,7 @@ const components: MDXComponents = {
       as='ol'
       pl={{ base: '1.5rem', md: '2rem' }}
       mb={{ base: '1.25rem', md: '1.5rem' }}
-      fontSize={{ base: '18px', md: '20px', lg: '21px' }}
+      fontSize={{ base: '1rem', md: '1.125rem' }}
       lineHeight={{ base: '1.8', md: '1.85' }}
       spaceY={{ base: 2.5, md: 3 }}
     >
@@ -108,7 +108,7 @@ const components: MDXComponents = {
   ),
   code: ({ children }) => (
     <Code
-      fontSize={{ base: '16px', md: '17px' }}
+      fontSize={{ base: '0.875rem', md: '0.9375rem' }}
       px={1.5}
       py={0.5}
       borderRadius='md'
