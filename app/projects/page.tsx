@@ -47,15 +47,24 @@ const ProjectsPage = () => {
         <MainHeader title={'Projects'} />
         <Grid
           templateColumns={{ base: 'repeat(1, 1fr)', md: 'repeat(2, 1fr)' }}
-          gapX={6}
-          gapY={20}
-          alignItems='stretch'
+          gapX={{
+            base: 4,
+            md: 6,
+            lg: 8,
+            xl: 10,
+          }}
+          gapY={{
+            base: 10,
+            md: 12,
+            lg: 14,
+            xl: 16,
+          }}
         >
           {projects.map((data, index) => (
             <GridItem
               key={index}
               colSpan={1}
-              maxW='30rem'
+              maxW={{ base: '100%', md: '22rem', lg: '24rem' }}
               w={'100%'}
               h={'100%'}
               justifySelf={'center'}

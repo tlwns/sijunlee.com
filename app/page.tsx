@@ -9,23 +9,30 @@ const HomePage = () => {
     <MainLayout>
       <Flex
         flexDir='column'
-        gap={{ base: 8, md: 12 }}
+        gap={{ base: 8, md: 10, '2xl': 12 }}
         justify={'space-between'}
         w={'100%'}
-        minH={'calc(100svh - 5rem)'}
-        py={{ base: 16, md: 24 }}
-        px={{ base: 12, md: 20, '2xl': 80 }}
+        minH={{ base: 'calc(100svh - 5rem)', md: 'calc(100svh - 4rem)' }}
+        py={{ base: 12, md: 16, lg: 8, '2xl': 24 }}
+        px={{ base: 12, md: 20, lg: 32, xl: 48, '2xl': 80 }}
       >
         <Flex
           direction={{ base: 'column', md: 'row' }}
           justify={'space-between'}
           align={'flex-start'}
-          gap={{ base: 8, md: 16 }}
+          gap={{ base: 8, md: 12, '2xl': 16 }}
         >
           <Heading
             fontWeight={'bold'}
             as={'h1'}
-            fontSize={{ base: '5rem', sm: '6rem', md: '8rem', xl: '10rem' }}
+            fontSize={{
+              base: '5rem',
+              sm: '6rem',
+              md: '7rem',
+              lg: '7rem',
+              xl: '8rem',
+              '2xl': '10rem',
+            }}
             whiteSpace='pre-line'
             lineHeight={1}
             letterSpacing={'tighter'}
@@ -35,7 +42,13 @@ const HomePage = () => {
           <Image
             alignSelf={{ base: 'flex-end', md: 'flex-start' }}
             asChild
-            boxSize={{ base: '120px', md: '160px', lg: '200px', xl: '200px' }}
+            boxSize={{
+              base: '120px',
+              md: '140px',
+              lg: '140px',
+              xl: '160px',
+              '2xl': '200px',
+            }}
             fit={'cover'}
             borderRadius={'full'}
             objectPosition={'left bottom'}
@@ -62,7 +75,13 @@ const HomePage = () => {
             maxW={{ base: 'full', md: '40%', lg: '50%', xl: '60%' }}
           >
             <Text
-              fontSize={{ base: 'lg', md: '2xl', lg: '3xl', xl: '4xl' }}
+              fontSize={{
+                base: 'lg',
+                md: 'xl',
+                lg: 'xl',
+                xl: '2xl',
+                '2xl': '4xl',
+              }}
               fontWeight={'medium'}
               letterSpacing={'tighter'}
             >
